@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Stilurile tale -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../styles.css">
+
+  <title>Spălare și călcare perdele / draperii – CLEANIT</title>
+</head>
+<body>
+
+  <!-- Меню будет загружено сюда -->
+  <div id="menu-container"></div>
+
+  <main class="service-page">
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs py-3">
+      <div class="container">
+        <small>
+          <a href="../">Servicii</a> /
+          <a href="#">Persoane fizice</a> /
+          <span>Spălare și călcare perdele / draperii</span>
+        </small>
+      </div>
+    </section>
+
+    <!-- Герой-блок -->
+    <section class="service-hero py-5">
+      <div class="container">
+        <div class="row align-items-start">
+
+          <!-- Текст слева -->
+          <div class="col-lg-8 col-md-7">
+            <h1 class="service-title mb-4">
+              Spălare și călcare perdele / draperii
+            </h1>
+
+            <p>
+              Perdelele și draperiile dau atmosferă casei tale, dar adună foarte repede
+              praf, mirosuri și alergeni. Serviciul nostru de <strong>spălare și călcare</strong>
+              are grijă ca textilele din casă să fie din nou curate, proaspete și frumos aranjate.
+            </p>
+
+            <p>
+              Echipa Ora Curățeniei demontează cu grijă perdelele și draperiile, le sortează
+              în funcție de material și culoare, folosește detergenți profesionali potriviți
+              și programe speciale de spălare, pentru a proteja țesătura.
+            </p>
+
+            <h5 class="mt-4 mb-2">Cât de des ar trebui curățate perdelele?</h5>
+            <p>
+              În mod ideal, se recomandă curățarea lor la fiecare 4–6 luni, mai ales în camerele
+              cu trafic intens sau în locuințele cu copii și animale de companie.
+            </p>
+
+            <h5 class="mt-4 mb-2">
+              Modalități de a menține perdelele și draperiile curate mai mult timp
+            </h5>
+            <p>
+              Aerisirea regulată, ștergerea prafului de pe galerii și cornize și aspirarea delicată
+              a țesăturii ajută la menținerea rezultatului. Pentru o curățare profundă însă,
+              cel mai sigur este să apelați la profesioniști.
+            </p>
+
+            <p>
+              Specialiștii noștri se ocupă de întregul proces: demontare, transport, spălare,
+              călcare și remontare. Astfel, nu pierzi timp, iar perdelele revin impecabile și gata
+              puse la loc.
+            </p>
+
+            <p>
+              Folosim detergenți și soluții potrivite pentru fibră, pentru a evita micșorarea
+              sau decolorarea materialului. La final, draperiile sunt perfect călcate și aranjate,
+              astfel încât camera să arate ca nouă.
+            </p>
+          </div>
+
+
+<div id="faq-container"></div>
+<div id="alteservicii-container"></div>
+<div id="footer-container"></div>
+  <script>
+    fetch("menu.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("menu-container").innerHTML = html;
+      });
+
+      fetch("faq.html")
+      .then(response => response.text())  
+      .then(html => {
+        document.getElementById("faq-container").innerHTML = html;
+      });
+      fetch("alteservicii.html")
+      .then(response => response.text())    
+      .then(html => {
+        document.getElementById("alteservicii-container").innerHTML = html;
+      });
+
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("footer-container").innerHTML = html;
+      });
+  </script>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+          crossorigin="anonymous"></script>
+
+</body>
+</html>

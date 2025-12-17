@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+/* =====================================================
+   GLOBAL VARIABLES (BRAND)
+===================================================== */
+:root {
+  --brand-primary: #1F6FA5;
+  --brand-secondary: #7ECFE2;
+  --brand-dark: #0B1F3B;
+  --text-muted: #6F8FA3;
+  --bg-light: #F4F8FC;
+}
+
+/* =====================================================
+   TOPBAR
+===================================================== */
+.topbar {
+  background: #E7EEF2;
+  border-bottom: 1px solid #A7D6F1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.phone-icon {
+  background: var(--brand-primary);
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.phone-text span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.phone-number {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+.main-menu {
+  height: 70px;
+  background: var(--brand-primary);
+}
+
+.main-menu .nav-link {
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 22px !important;
+  transition: background .2s ease;
+}
+
+.main-menu .nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-consult {
+  background: #E7EEF2;
+  color: var(--brand-primary) !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 6px;
+}
+
+.btn-consult:hover {
+  background: #fff;
+}
+
+/* =====================================================
+   HERO SECTION – BACKGROUND
+===================================================== */
+.hero-section {
+  position: relative;
+  background:
+    linear-gradient(
+      120deg,
+      rgba(11, 31, 59, 0.82) 0%,
+      rgba(11, 31, 59, 0.55) 45%,
+      rgba(11, 31, 59, 0.15) 75%,
+      rgba(11, 31, 59, 0.05) 100%
+    ),
+    url("../cleanitsitefront/img/woman-vacuuming-carpet-in-living-room.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: clamp(80px, 12vw, 140px) 0;
+}
+
+/* =====================================================
+   HERO TEXT
+===================================================== */
+.hero-title {
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.02;
+  font-size: clamp(46px, 6vw, 72px);
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.hero-title::after {
+  content: "";
+  width: 96px;
+  height: 4px;
+  border-radius: 999px;
+  margin-top: 18px;
+  display: block;
+  background: linear-gradient(
+    90deg,
+    var(--brand-secondary),
+    var(--brand-primary)
+  );
+}
+
+.hero-subtitle {
+  max-width: 560px;
+  font-size: clamp(17px, 1.4vw, 21px);
+  line-height: 1.65;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* =====================================================
+   HERO CTA BUTTON
+===================================================== */
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+
+  padding: 15px 32px;
+  border-radius: 14px;
+  border: none;
+
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #fff !important;
+  background: linear-gradient(
+    135deg,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+
+  box-shadow:
+    0 18px 42px rgba(31, 111, 165, 0.45),
+    0 6px 16px rgba(0, 0, 0, 0.2);
+
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.btn-hero:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow:
+    0 26px 60px rgba(31, 111, 165, 0.55),
+    0 10px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* =====================================================
+   HERO FORM CARD
+===================================================== */
+.hero-form-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 22px;
+  padding: 38px;
+
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.45),
+    0 16px 36px rgba(0, 0, 0, 0.22);
+
+  transform: translateY(-12px);
+}
+
+.hero-form-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  border-radius: 22px 22px 0 0;
+  background: linear-gradient(
+    90deg,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+}
+
+.hero-form-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--brand-primary);
+  margin-bottom: 20px;
+}
+
+.hero-form-card label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.hero-form-card .form-control {
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid #E2ECF2;
+  font-size: 15px;
+  padding: 10px 14px;
+}
+
+.hero-form-card .form-control:focus {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(31, 111, 165, 0.18);
+}
+
+/* =====================================================
+   FORM SUBMIT
+===================================================== */
+.btn-hero-submit {
+  width: 100%;
+  margin-top: 14px;
+
+  padding: 15px 22px;
+  border-radius: 14px;
+  border: none;
+
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 15px;
+
+  color: #fff !important;
+  background: linear-gradient(
+    135deg,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+
+  box-shadow: 0 18px 40px rgba(31, 111, 165, 0.45);
+  transition: transform .2s ease;
+}
+
+.btn-hero-submit:hover {
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 991.98px) {
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-form-card {
+    transform: none;
+    margin-top: 40px;
+  }
+
+  .btn-hero {
+    width: 100%;
+  }
+}
+a.hero-call {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+  margin-top: 20px;
+
+  border-radius: 8px;
+  border: 1px solid rgba(31, 111, 165, 0.28);
+
+  font-weight: 600;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #1F6FA5 !important;
+  background: rgba(31, 111, 165, 0.04);
+
+  text-decoration: none;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(31, 111, 165, 0.12);
+
+  transition:
+    background .18s ease,
+    color .18s ease,
+    box-shadow .18s ease,
+    transform .15s ease;
+}
+
+/* icon telefon – foarte mic */
+a.hero-call::before {
+  content: "\f5c1"; /* bi-telephone-fill */
+  font-family: "Bootstrap-icons";
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* Hover / tap */
+a.hero-call:hover {
+  background: rgba(31, 111, 165, 0.12);
+  box-shadow: 0 6px 14px rgba(31, 111, 165, 0.22);
+}
+
+/* Tap feedback */
+a.hero-call:active {
+  transform: scale(0.98);
+}
+
+/* Focus */
+a.hero-call:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px rgba(31, 111, 165, 0.25),
+    0 6px 16px rgba(31, 111, 165, 0.25);
+}
+
+/* =====================================================
+   EXTRA SMALL DEVICES (sub 320px)
+===================================================== */
+
+@media (max-width: 320px) {
+  a.hero-call {
+    font-size: 12px;
+    padding: 9px 14px;
+  }
+}

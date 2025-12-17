@@ -1,0 +1,547 @@
+
+    .prices-page {
+      background-color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    /* HERO БЛОК С ОБЩИМ ОПИСАНИЕМ */
+    .price-hero {
+      background: linear-gradient(135deg, #edf4ff 0%, #f7fbff 100%);
+      border-radius: 20px;
+      padding: 35px 30px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .price-hero-title {
+      font-weight: 800;
+      font-size: 32px;
+      color: #003c7d;
+      margin-bottom: 10px;
+    }
+
+    .price-hero-subtitle {
+      font-size: 16px;
+      color: #52607a;
+      margin-bottom: 18px;
+    }
+
+    .price-hero-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      color: #435067;
+      font-size: 14px;
+    }
+
+    .price-hero-list li {
+      margin-bottom: 6px;
+    }
+
+    .price-hero-list i {
+      color: #1e88e5;
+      margin-right: 6px;
+    }
+
+    /* КАРТОЧКИ С ОСНОВНЫМИ ПАКЕТАМИ */
+    .price-cards-section {
+      margin-bottom: 45px;
+    }
+
+    .price-cards-title {
+      font-weight: 800;
+      font-size: 24px;
+      color: #003c7d;
+      margin-bottom: 25px;
+    }
+
+    .price-card {
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 14px 32px rgba(0, 36, 94, 0.08);
+      padding: 22px 22px 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #e3ecf7;
+      transition: transform .2s ease, box-shadow .2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .price-card::before {
+      content: "";
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle at center, #e4f0ff 0, transparent 60%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    .price-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: #e6f1ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      font-size: 22px;
+      color: #0d5adf;
+    }
+
+    .price-card-title {
+      font-weight: 700;
+      font-size: 17px;
+      color: #00315f;
+      margin-bottom: 6px;
+    }
+
+    .price-card-desc {
+      font-size: 13px;
+      color: #5f6d84;
+      margin-bottom: 14px;
+      min-height: 36px;
+    }
+
+    .price-card-value {
+      font-weight: 800;
+      font-size: 22px;
+      color: #0d4fb8;
+      margin-bottom: 4px;
+    }
+
+    .price-card-unit {
+      font-size: 13px;
+      color: #7a8599;
+      margin-bottom: 10px;
+    }
+
+    .price-card-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 4px 9px;
+      border-radius: 20px;
+      background: #f0f5ff;
+      color: #3758a5;
+    }
+
+    .price-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0, 36, 94, 0.12);
+    }
+
+    /* БЛОКИ С ДЕТАЛЬНЫМИ ЦЕНАМИ (ТАБЛИЦЫ) */
+    .price-details-title {
+      font-weight: 800;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #003c7d;
+      margin-top: 45px;
+      margin-bottom: 18px;
+    }
+
+    .price-block {
+      background-color: #f3f6fb;
+      border-radius: 14px;
+      padding: 18px 24px;
+      margin-bottom: 18px;
+    }
+
+    .price-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .price-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: #313947;
+      padding: 8px 0;
+      border-bottom: 1px solid #e0e4ee;
+    }
+
+    .price-list li:last-child {
+      border-bottom: none;
+    }
+
+    .price-value {
+      font-weight: 700;
+      color: #003c7d;
+      white-space: nowrap;
+    }
+
+    .price-note {
+      font-size: 13px;
+      color: #6b778c;
+      margin-top: 4px;
+    }
+
+    /* АБОНЕМЕНТЫ / MENAJ */
+    .price-text-block {
+      font-size: 14px;
+      color: #3d4b66;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 991.98px) {
+      .price-hero {
+        padding: 25px 20px;
+      }
+      .price-hero-title {
+        font-size: 26px;
+      }
+      .price-card {
+        margin-bottom: 18px;
+      }
+    }
+    .price-details-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 50px 0 25px;
+  color: #0B4573;
+}
+
+.price-card {
+  background: linear-gradient(145deg, #ffffff, #f5f9ff);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 6px 22px rgba(0, 80, 150, 0.08);
+  transition: 0.25s;
+  height: 100%;
+}
+
+.price-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 80, 150, 0.15);
+}
+
+.price-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.price-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #0B4573;
+}
+
+.price-card-desc {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-bottom: 16px;
+}
+
+.price-tag {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0066A5;
+}
+
+/* Цветовые варианты */
+.bg-blue { background: #0066A5; }
+.bg-green { background: #1BAA6F; }
+.bg-orange { background: #F57C00; }
+.bg-yellow { background: #F2C744; }
+.bg-purple { background: #6B4FEA; }
+.bg-teal { background: #1E9FB3; }
+
+/* ===== 3 PAȘI – STEPS SECTION ===== */
+
+.steps-section {
+  background-color: #ffffff;
+}
+
+.steps-kicker {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #4d6ea8;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.steps-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #003c7d;
+}
+
+.steps-intro {
+  font-size: 16px;
+  color: #5c6b80;
+  max-width: 420px;
+}
+
+/* карточка шага */
+.step-card {
+  background: #f7f9fe;
+  border-radius: 18px;
+  padding: 30px 22px 26px;
+  box-shadow: 0 18px 45px rgba(0, 60, 125, 0.08);
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+
+/* средняя карточка чуть ярче */
+.step-card-main {
+  background: #ffffff;
+  box-shadow: 0 20px 55px rgba(0, 60, 125, 0.16);
+}
+
+/* иконка */
+.step-icon-wrap {
+  margin-bottom: 18px;
+}
+
+.step-circle {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 20%, #8fd4ff, #0050a5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-circle i {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+/* заголовок шага */
+.step-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #003c7d;
+  margin-bottom: 6px;
+}
+
+/* маленькая линия под заголовком */
+.step-line {
+  width: 50px;
+  height: 3px;
+  border-radius: 999px;
+  background: #0a63c7;
+  margin: 8px auto 14px;
+}
+
+/* текст шага */
+.step-text {
+  font-size: 14px;
+  color: #4a566c;
+  margin-bottom: 0;
+}
+
+/* кнопка под шагом 2 */
+.btn-step-cta {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 9px 22px;
+  border-radius: 999px;
+  background: #003c7d;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn-step-cta:hover {
+  background: #002b59;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* hover */
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 60px rgba(0, 60, 125, 0.18);
+}
+
+/* адаптив */
+@media (max-width: 991.98px) {
+  .steps-title {
+    font-size: 28px;
+  }
+  .steps-intro {
+    margin-top: 15px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .step-card {
+    padding: 24px 20px 22px;
+  }
+}
+/* HERO SECTION — светлый современный */
+.hero-section {
+  background: #f5f8ff;
+  padding: 80px 0 90px;
+}
+
+.hero-overlay {
+  background: none;
+}
+
+/* Заголовок */
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0a2a5c;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* Подзаголовок */
+.hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 420px;
+  line-height: 1.6;
+  color: #1d3d7c;
+}
+
+/* Кнопка слева */
+.btn-hero {
+  background: #0b67b5;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 12px 28px;
+  border-radius: 10px;
+  transition: .25s;
+}
+
+.btn-hero:hover {
+  background: #084c85;
+  transform: translateY(-2px);
+}
+
+/* ФОРМА */
+.hero-form-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(32, 98, 170, 0.12);
+  border: 1px solid rgba(190, 210, 240, 0.3);
+}
+
+.hero-form-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b3168;
+}
+
+/* Поля формы */
+.hero-form-card .form-control {
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #bdd3e9;
+  transition: .25s;
+}
+
+.hero-form-card .form-control:focus {
+  border-color: #0b67b5;
+  box-shadow: 0 0 0 3px rgba(11, 103, 181, .18);
+}
+
+/* Кнопка отправки */
+.hero-submit-btn {
+  width: 100%;
+  background: #0b67b5;
+  color: white;
+  padding: 12px 0;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: .25s;
+}
+
+.hero-submit-btn:hover {
+  background: #084c85;
+  transform: translateY(-2px);
+}
+
+/* Mobile адаптив */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+}
+/* Текст внутри формы — читаемый */
+.hero-form-card label,
+.hero-form-card input,
+.hero-form-card input::placeholder {
+  color: #0a2a5c !important; /* насыщенный тёмно-синий */
+  font-weight: 600;
+}
+
+/* фон формы остаётся белым */
+.hero-form-card {
+  background: #ffffff;
+}
+
+/* кнопка */
+.hero-submit-btn {
+  background: #0b67b5;
+  color: #ffffff;
+}
+
+/* hover эффект */
+.hero-submit-btn:hover {
+  background: #084c85;
+}
+/* HERO main button */
+.hero-section .btn-hero {
+  display: inline-block;
+  background: #0b67b5;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 13px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  transition: .25s;
+}
+
+.hero-section .btn-hero:hover {
+  background: #084c85;
+  transform: translateY(-2px);
+  color: #ffffff;
+}

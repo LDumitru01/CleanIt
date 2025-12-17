@@ -1,0 +1,2782 @@
+
+/* TEST: force red background */
+html body {
+  background-color: rgb(31, 111, 165) !important;
+}
+
+/* BUTTON LEFT */
+.btn-hero,
+.btn-hero:link,
+.btn-hero:visited {
+  display: inline-block;
+  background-color: #1F6FA5 !important; /* Updated button color */
+  color: #ffffff !important;
+  padding: 12px 30px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* HOVER + ACTIVE */
+.btn-hero:hover,
+.btn-hero:focus,
+.btn-hero:active {
+  background-color: #7ECFE2 !important;
+  color: #1F6FA5 !important;
+  text-decoration: none !important;
+}
+
+
+/* BUTTON RIGHT */
+.btn-hero-submit,
+.btn-hero-submit:link,
+.btn-hero-submit:visited {
+  display: inline-block;
+  width: 100%;
+  background-color: #1F6FA5 !important;
+  color: #ffffff !important;
+  padding: 12px 20px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* HOVER FIX */
+.btn-hero-submit:hover,
+.btn-hero-submit:focus,
+.btn-hero-submit:active {
+  background-color: #7ECFE2 !important;
+  color: #1F6FA5 !important;
+  text-decoration: none !important;
+}
+/* ==== FIX: ?????? CONSULTA?IE GRATUITA ==== */
+
+.btn-consult,
+.btn-consult-top,
+.btn-consult-inner,
+.btn-consult:link,
+.btn-consult:visited,
+.btn-consult-top:link,
+.btn-consult-top:visited,
+.btn-consult-inner:link,
+.btn-consult-inner:visited {
+  display: inline-block;
+  background-color: #E7EEF2 !important;   /* ??????? ???, ??? ? ????????? */
+  color: #1F6FA5 !important;              /* ?????-????? ????? */
+  padding: 10px 25px !important;
+  border-radius: 5px !important;
+  border: none !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none !important;
+}
+
+/* ????????? / ???? */
+.btn-consult:hover,
+.btn-consult:focus,
+.btn-consult:active,
+.btn-consult-top:hover,
+.btn-consult-top:focus,
+.btn-consult-top:active,
+.btn-consult-inner:hover,
+.btn-consult-inner:focus,
+.btn-consult-inner:active {
+  background-color: #ffffff !important;
+  color: #1F6FA5 !important;
+  text-decoration: none !important;
+}
+/* ===== SERVICII GRID ===== */
+
+.servicii-section {
+  background-color: #ffffff;
+}
+
+.servicii-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1F6FA5;
+}
+
+/* ???? ???????? */
+.serviciu-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #A7D6F1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  height: 100%;
+}
+
+/* ???????? */
+.serviciu-img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ????? ?????? ? ???????? */
+.serviciu-caption {
+  position: relative;
+  background-color: #1F6FA5;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  text-transform: none;
+  padding: 12px 10px;
+}
+
+/* ????????? ?????? ??? ????????? */
+.serviciu-card:hover .serviciu-img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.serviciu-card:hover .serviciu-caption {
+  background-color: #7ECFE2;
+  color: #1F6FA5;
+  transition: background-color 0.3s ease;
+}
+
+/* ??????? ??? ????????? */
+@media (max-width: 767.98px) {
+  .serviciu-img {
+    height: 190px;
+  }
+
+  .servicii-title {
+    font-size: 26px;
+  }
+}
+/* ===== FIX MEGAMENU ===== */
+.megamenu {
+  position: static !important;
+}
+
+.megamenu .dropdown-menu {
+  width: 100vw !important; /* ?? ??? ?????? ???? */
+  left: 0 !important;
+  right: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.megamenu-content .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.megamenu-content img {
+  max-width: 350px;
+  border-radius: 8px;
+}
+
+/* ===== MENAJ SECTION ===== */
+
+.menaj-section {
+  background: #f6f9fc;
+  padding: 80px 0;
+}
+
+.menaj-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 34px;
+  color: #1F3B63;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.menaj-subtitle {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 60px;
+  font-size: 16px;
+  color: #6F8FA3;
+  line-height: 1.6;
+}
+
+/* CARD */
+.menaj-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  height: 100%;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.menaj-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+}
+
+/* TITLU CARD */
+.menaj-card-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1F6FA5;
+  margin-bottom: 4px;
+}
+
+.menaj-card-desc {
+  font-size: 14px;
+  color: #6F8FA3;
+  margin-bottom: 24px;
+}
+
+/* ITEM */
+.menaj-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 14px 0;
+  border-top: 1px solid #E7EEF2;
+}
+
+.menaj-item:first-of-type {
+  border-top: none;
+}
+
+.menaj-item strong {
+  display: block;
+  font-size: 15px;
+  color: #0B1F3B;
+}
+
+.menaj-item span {
+  font-size: 13px;
+  color: #6F8FA3;
+}
+
+/* PRET */
+.menaj-price {
+  font-weight: 800;
+  font-size: 16px;
+  color: #1F6FA5;
+  white-space: nowrap;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .menaj-title {
+    font-size: 26px;
+  }
+
+  .menaj-card {
+    padding: 26px;
+  }
+}
+/* ===== ABOUT COMPANY ===== */
+
+.about-company-section {
+  background-color: #E7EEF2;
+}
+
+.about-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  color: #1F6FA5;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #6F8FA3;
+}
+
+/* ?????? */
+.btn-about-primary,
+.btn-about-secondary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  border-radius: 6px;
+}
+
+.btn-about-primary {
+  background-color: #1F6FA5;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-about-primary:hover {
+  background-color: #7ECFE2;
+  color: #1F6FA5;
+}
+
+.btn-about-secondary {
+  background-color: transparent;
+  color: #1F6FA5;
+  border: 2px solid #1F6FA5;
+}
+
+.btn-about-secondary:hover {
+  background-color: #1F6FA5;
+  color: #ffffff;
+}
+
+/* ?????? ???? ?????? */
+.about-gallery {
+  position: relative;
+  min-height: 320px;
+}
+
+.about-photo {
+  position: absolute;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ??????? ???????? ????? */
+.about-photo-large {
+  top: 30px;
+  left: 0;
+  width: 58%;
+  height: 260px;
+}
+
+/* ??????? ????????? */
+.about-photo-small.top {
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 160px;
+}
+
+/* ?????? ????????? */
+.about-photo-small.bottom {
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  height: 160px;
+}
+
+@media (max-width: 991.98px) {
+  .about-gallery {
+    margin-top: 20px;
+    min-height: auto;
+  }
+
+  .about-photo,
+  .about-photo-large,
+  .about-photo-small.top,
+  .about-photo-small.bottom {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* =====================================================
+   WHY US – DE CE CLIENȚII ALEG CLEANIT
+===================================================== */
+
+.whyus-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f6f9fc 100%);
+}
+
+.whyus-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: clamp(26px, 3vw, 32px);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1F6FA5;
+  position: relative;
+}
+
+/* linie decorativă sub titlu */
+.whyus-title::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin: 18px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1F6FA5, #7ECFE2);
+}
+
+/* CARD */
+.whyus-card {
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  padding: 34px 30px;
+  background: linear-gradient(
+    145deg,
+    #1F6FA5 0%,
+    #246fa3 60%,
+    #2c7db4 100%
+  );
+  color: #ffffff;
+  overflow: hidden;
+
+  box-shadow:
+    0 18px 40px rgba(31, 111, 165, 0.35),
+    0 6px 14px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* hover – profesional, nu agresiv */
+.whyus-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 26px 60px rgba(31, 111, 165, 0.45),
+    0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* TITLU CARD */
+.whyus-card-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 12px;
+  z-index: 2;
+  position: relative;
+}
+
+/* TEXT */
+.whyus-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  z-index: 2;
+  position: relative;
+}
+
+/* NUMĂR DECORATIV */
+.whyus-number {
+  position: absolute;
+  right: 18px;
+  bottom: 6px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 84px;
+
+  color: rgba(255, 255, 255, 0.12);
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* subtil glow pe hover */
+.whyus-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.15),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.whyus-card:hover::before {
+  opacity: 1;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .whyus-card {
+    padding: 28px 24px;
+  }
+
+  .whyus-number {
+    font-size: 64px;
+  }
+
+  .whyus-card-title {
+    font-size: 18px;
+  }
+
+  .whyus-text {
+    font-size: 14px;
+  }
+}
+
+/* ===== FEEDBACK ===== */
+
+.feedback-section {
+  background-color: #ffffff;
+}
+
+.feedback-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #1F6FA5;
+}
+
+.feedback-card {
+  background-color: #E7EEF2;
+  border-radius: 16px;
+  padding: 30px 28px;
+  height: 100%;
+  text-align: left;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.feedback-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #E7EEF2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #1F6FA5;
+  margin-bottom: 16px;
+}
+
+.feedback-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #6F8FA3;
+  margin-bottom: 20px;
+}
+
+.feedback-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1F6FA5;
+}
+
+/* ?????????? ???????? (?????) */
+.feedback-section .carousel-indicators {
+  bottom: -30px;
+}
+
+.feedback-section .carousel-indicators li {
+  background-color: #E7EEF2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.feedback-section .carousel-indicators .active {
+  background-color: #1F6FA5;
+}
+/* =====================================================
+   BANNER CONSULTAȚIE GRATUITĂ – PREMIUM
+===================================================== */
+
+.banner-consultatie {
+  position: relative;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(11, 31, 59, 0.92) 0%,
+      rgba(31, 111, 165, 0.92) 55%,
+      rgba(31, 111, 165, 0.85) 100%
+    ),
+    url("../cleanitsitefront/img/office-cleaning-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* OVERLAY – SOLID, CONTROL TOTAL */
+.banner-overlay {
+  padding: clamp(70px, 10vw, 120px) 0;
+  width: 100%;
+}
+
+/* =====================================================
+   TEXT STÂNGA
+===================================================== */
+
+.banner-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: clamp(26px, 4vw, 36px);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+/* linie decorativă */
+.banner-title::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-top: 16px;
+  border-radius: 999px;
+}
+
+.banner-subtitle {
+  max-width: 520px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* =====================================================
+   FORM CARD – DREAPTA
+===================================================== */
+
+.banner-form {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 36px 34px;
+
+  box-shadow:
+    0 22px 55px rgba(0, 0, 0, 0.35),
+    0 8px 18px rgba(0, 0, 0, 0.18);
+
+  backdrop-filter: blur(4px);
+}
+
+/* TITLU FORM */
+.banner-form-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #1F6FA5;
+  margin-bottom: 22px;
+}
+
+/* LABEL */
+.banner-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6F8FA3;
+  margin-bottom: 6px;
+}
+
+/* INPUT */
+.banner-form .form-control {
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #E1ECF2;
+  font-size: 15px;
+  padding: 10px 14px;
+
+  transition:
+    border-color .15s ease,
+    box-shadow .15s ease;
+}
+
+.banner-form .form-control:focus {
+  border-color: #1F6FA5;
+  box-shadow: 0 0 0 3px rgba(31, 111, 165, 0.15);
+}
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.btn-banner-submit {
+  width: 100%;
+  margin-top: 12px;
+
+  background: linear-gradient(135deg, #1F6FA5, #46A6D8);
+  color: #ffffff !important;
+
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  padding: 14px 22px;
+  border-radius: 12px;
+  border: none;
+
+  box-shadow:
+    0 14px 34px rgba(31, 111, 165, 0.4);
+
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background .18s ease;
+}
+
+.btn-banner-submit:hover {
+  background: linear-gradient(135deg, #185f8f, #7ECFE2);
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 42px rgba(31, 111, 165, 0.5);
+}
+
+.btn-banner-submit:active {
+  transform: translateY(0);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991.98px) {
+
+  .banner-form {
+    margin-top: 40px;
+    padding: 30px 26px;
+  }
+
+  .banner-title {
+    text-align: center;
+  }
+
+  .banner-title::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner-subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .banner-overlay {
+    padding: 60px 0;
+  }
+
+  .banner-title {
+    font-size: 24px;
+  }
+
+  .banner-form {
+    padding: 26px 22px;
+  }
+}
+
+/* ===== PRICES PAGE ===== */
+
+.prices-page {
+  background-color: #ffffff;
+}
+
+.prices-breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.prices-breadcrumb .breadcrumb-item a {
+  color: #1F6FA5;
+}
+
+.prices-breadcrumb .breadcrumb-item.active {
+  color: #6F8FA3;
+}
+
+/* ????????? ?????? */
+.price-section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #1F6FA5;
+  margin-top: 35px;
+  margin-bottom: 18px;
+}
+
+/* ????? ???? ? ???????? */
+.price-block {
+  background-color: #E7EEF2;
+  border-radius: 4px;
+  padding: 18px 26px;
+}
+
+/* ?????? ????? */
+.price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #313947;
+  padding: 8px 0;
+  border-bottom: 1px solid #E7EEF2;
+}
+
+.price-list li:last-child {
+  border-bottom: none;
+}
+
+.price-value {
+  font-weight: 700;
+  color: #1F6FA5;
+  white-space: nowrap;
+}
+/* ===== UTILAJ PAGE ===== */
+
+.utilaj-page {
+  background-color: #ffffff;
+}
+
+.utilaj-breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.utilaj-breadcrumb .breadcrumb-item a {
+  color: #1F6FA5;
+}
+
+.utilaj-breadcrumb .breadcrumb-item.active {
+  color: #6F8FA3;
+}
+
+.utilaj-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #1F6FA5;
+}
+
+/* ???????? ???????????? */
+.utilaj-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 2px solid #E7EEF2;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.utilaj-img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.utilaj-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1F6FA5;
+  margin-bottom: 5px;
+}
+
+/* ????????? ????? */
+.utilaj-card:hover {
+  border-color: #1F6FA5;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+  transition: all 0.25s ease;
+}
+
+@media (max-width: 767.98px) {
+  .utilaj-img {
+    height: 220px;
+  }
+}
+.footer-section {
+  background: #0a2a5c;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 50px;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-social a {
+  font-size: 22px;
+  margin-right: 15px;
+    left: auto !important;    /* evita centrare pe ecrane mici */
+  color: #ccc;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-tel {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 13px;
+  color: #888;
+}
+/* ===== CONSULTATIE MODAL ===== */
+
+.consult-modal .modal-dialog {
+  max-width: 600px;
+}
+
+.consult-modal .modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.consult-modal .modal-body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.consult-title {
+  font-weight: 800;
+  font-size: 26px;
+  color: #1F6FA5;
+  text-transform: uppercase;
+}
+
+/* ??????? ? ?????? ??????? ???? */
+.consult-close {
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  font-size: 28px;
+  color: #333;
+  opacity: 1;
+  z-index: 2;
+}
+
+.consult-close span {
+  line-height: 1;
+}
+
+.consult-form label {
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+}
+
+.consult-form .form-control {
+  height: 46px;
+  border-radius: 6px;
+  border: 1px solid #E7EEF2;
+}
+
+/* ?????? ???????? */
+.btn-consult-submit {
+  background: #1F6FA5;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 11px 20px;
+  border: none;
+}
+
+.btn-consult-submit:hover {
+  background: #7ECFE2;
+  color: #1F6FA5 !important;
+}
+
+/* ????? ? ??????? */
+.consult-subtext {
+  font-size: 13px;
+  color: #999;
+}
+
+.consult-phone {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1F6FA5;
+  text-decoration: none;
+}
+
+.consult-phone:hover {
+  color: #1F6FA5;
+}
+
+/* ?????? ???????? */
+.consult-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #E7EEF2;
+  margin: 0 6px;
+  color: #1F6FA5;
+  font-size: 18px;
+}
+
+.consult-social a:hover {
+  background: #1F6FA5;
+  color: #fff;
+}
+.mega-list a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 3px 0;
+  font-size: 15px;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+
+.mega-list a:hover {
+  color: #0a4dbf;
+  text-decoration: none;
+}
+/* ===== ???????? ????? (service pages) ===== */
+
+/* ????? ?????? ????? ? ??????? */
+.service-page-section {
+  padding: 60px 0;
+}
+
+/* ?????? ?????? (???? ??????????? <ol class="breadcrumb">) */
+.breadcrumb {
+  background: transparent;
+  padding-left: 0;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #1F6FA5;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #999;
+}
+
+/* ????????? ?????? */
+.service-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #1F6FA5;
+  margin-bottom: 20px;
+}
+
+/* ????? ??? ?????????? */
+.service-intro {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* ?????? ? ????????? */
+.service-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 10px 0;
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.service-list li::before {
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 14px;
+  color: #78b428; /* ??????? ???????, ?????? ???????? */
+}
+
+/* ???????? ?????? ?? ??????-????????? */
+.service-image-wrapper img {
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== ????? "Trimite?i cererea" ?????? ===== */
+
+.service-form-card {
+  background: #E7EEF2;
+  border-radius: 10px;
+  padding: 25px 25px 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-form-card h3,
+.service-form-card .form-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #1F6FA5;
+}
+
+.service-form-card .form-control {
+  border-radius: 6px;
+  border: 1px solid #E7EEF2;
+  height: 44px;
+  font-size: 14px;
+}
+
+.service-form-card .btn {
+  width: 100%;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 11px 16px;
+}
+
+/* ===== FAQ (�NTREBARI FRECVENTE) ===== */
+.faq-section {
+  padding: 50px 0 40px;
+}
+
+.faq-section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: #1F6FA5;
+  margin-bottom: 25px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #E7EEF2;
+}
+
+.faq-question {
+  width: 100%;
+  background: #fff;
+  border: none;
+  padding: 15px 0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  color: #1F6FA5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question span {
+  flex: 1;
+}
+
+.faq-toggle {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #1F6FA5;
+}
+
+.faq-answer {
+  display: none;           /* ?????? ????????? ????? JS */
+  padding: 0 0 15px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* ????????? "???????" (???? ???????? ????? .open ????? JS) */
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-toggle {
+  transform: rotate(180deg);
+}
+
+/* ===== ???? "ALTE SERVICIILE" ????? ===== */
+
+.other-services-section {
+  padding: 50px 0 70px;
+}
+
+.other-services-section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: #1F6FA5;
+  margin-bottom: 30px;
+}
+
+.service-card {
+  display: block;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card img {
+  width: 100%;
+  display: block;
+}
+
+.service-card-title {
+  background: #1F6FA5;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 10px;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== ??????? ===== */
+
+@media (max-width: 991.98px) {
+  .service-title {
+    font-size: 30px;
+  }
+
+  .service-page-section {
+    padding-top: 35px;
+  }
+
+  .service-image-wrapper {
+    margin-top: 25px;
+  }
+
+  .service-form-card {
+    margin-top: 25px;
+  }
+
+  .other-services-section {
+    padding-bottom: 40px;
+  }
+}
+/* ----------------------------- */
+/*  ??????? ????? ??? ????????   */
+/* ----------------------------- */
+
+.service-page {
+  font-family: "Montserrat", sans-serif;
+  color: #0d1b3e;
+}
+
+.service-title {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+/* ----------------------------- */
+/*   ?????? ??????? ??????       */
+/* ----------------------------- */
+
+.breadcrumbs small,
+.breadcrumbs a {
+  font-size: 14px;
+  color: #6F8FA3;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------- */
+/*   ????? ??????                */
+/* ----------------------------- */
+
+.service-form-wrapper {
+  background: #E7EEF2;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.service-form-wrapper h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.service-form-wrapper input {
+  height: 48px;
+  border-radius: 6px;
+}
+
+.btn-consult-submit {
+  background: #accd6f;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-consult-submit:hover {
+  background: #98b85a;
+}
+
+/* ----------------------------- */
+/*     FAQ (?????????)           */
+/* ----------------------------- */
+
+.faq-section {
+  margin-top: 50px;
+  border-top: 1px solid #E7EEF2;
+  padding-top: 40px;
+}
+
+.faq-section h2 {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #E7EEF2;
+  padding: 15px 0;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 18px;
+  text-align: left;
+  padding: 0;
+  font-weight: 600;
+  color: #0d1b3e;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:focus {
+  outline: none;
+}
+
+.faq-icon {
+  font-size: 26px;
+  font-weight: 200;
+  transition: 0.3s;
+}
+
+.faq-item.open .faq-question {
+  color: #1c3faa;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  color: #3d4b66;
+  padding-right: 20px;
+}
+
+.faq-answer p {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* ----------------------------- */
+/*   ALTE SERVICII               */
+/* ----------------------------- */
+
+.other-services h2 {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.service-card-link {
+  text-decoration: none;
+}
+
+.service-card {
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform .3s;
+}
+
+.service-card img {
+  width: 100%;
+  border-bottom: 0;
+}
+
+.service-card-title {
+  background: #0d1b3e;
+  color: #fff;
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ----------------------------- */
+/*     ??????? ??? ??????        */
+/* ----------------------------- */
+
+@media(max-width: 991px) {
+  .service-title {
+    font-size: 32px;
+  }
+  .service-form-wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media(max-width: 767px) {
+  .service-title {
+    font-size: 28px;
+  }
+  .faq-question {
+    font-size: 16px;
+  }
+  .faq-icon {
+    font-size: 22px;
+  }
+}
+.faq-section {
+  background: #ffffff;
+}
+
+.faq-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1F6FA5;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #1F6FA5;
+}
+
+.faq-question:hover {
+  color: #1F6FA5;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+  font-size: 18px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding-top: 10px;
+}
+
+/* ??????? ????? ???????? */
+.topbar .phone-number {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #003c7d !important;
+  letter-spacing: 0.5px;
+  text-decoration: none !important;
+}
+
+.topbar .phone-number:hover {
+  color: #001f4f !important;
+}
+/* ===== TOPBAR REBRAND ===== */
+.topbar {
+  background: #e9f3ff; /* ?????-??????? ??? */
+  border-bottom: 1px solid #cbd9ee;
+}
+
+.top-icon-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #0d3b72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 64, 145, 0.25);
+}
+
+.top-icon-btn.secondary {
+  background: #1fbf64; /* ??????? ??? WhatsApp */
+}
+
+.top-icon-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.phone-text span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4a5c78;
+  letter-spacing: 0.5px;
+}
+
+.phone-number {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0d3b72;
+  text-decoration: none;
+}
+
+.phone-number:hover {
+  color: #08264b;
+}
+
+/* ??????? - ??????? ??? ???????? ? ????????? */
+.top-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.top-logo img {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+  transition: height 0.3s ease;
+}
+
+/* ?? ????????? � ?????? */
+@media (max-width: 576px) {
+  .top-logo img {
+    height: 50px;
+  }
+}
+
+/* ????????? ??????? ?????? � ????????????? */
+.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  flex-wrap: nowrap;
+}
+
+/* ????? ???? ? ?????????? */
+.phone-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+  /* Desktop � ram�ne normal */
+.top-logo {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.top-logo img {
+  height: 150px !important;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+
+  /* navbar devine referin?a */
+  .main-menu {
+    position: relative;
+  }
+
+  /* hamburger ram�ne st�nga */
+  .navbar-toggler {
+    position: relative;
+    z-index: 1200;
+  }
+
+  /* LOGO �n capatul opus meniului */
+  .top-logo {
+    position: absolute;
+    right: 15px !important;   /* DREAPTA DE TOT */
+    left: auto !important;    /* evita centrare pe ecrane mici */
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+    z-index: 1200;
+
+    /* anulam centrare */
+    justify-content: flex-end;
+  }
+
+  .top-logo img {
+    height: 42px;
+  }
+}
+
+
+
+.feedback-logo {
+  width: 90px;
+  height: 50px;
+  border-radius: 6px;
+  background: #e3edf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 6px;
+}
+
+.feedback-logo img {
+  width: 200%;
+  height: 200%;
+  object-fit: contain;
+}
+/* ????? ?????? ????? � ???????? */
+.hero-form-card label,
+.hero-form-card input,
+.hero-form-card input::placeholder {
+  color: #0a2a5c !important; /* ?????????? ?????-????? */
+  font-weight: 600;
+}
+
+/* ??? ????? ???????? ????? */
+.hero-form-card {
+  background: #ffffff;
+}
+
+/* ?????? */
+.hero-submit-btn {
+  background: #0b67b5;
+  color: #ffffff;
+}
+
+/* hover ?????? */
+.hero-submit-btn:hover {
+  background: #084c85;
+}
+/* HERO SECTION � ??????? ??????????? */
+.hero-section {
+  background: #f5f8ff;
+  padding: 60px 0 70px;
+}
+
+.hero-overlay {
+  background: none;
+}
+
+/* ????????? */
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0a2a5c;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* ???????????? */
+.hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 420px;
+  line-height: 1.6;
+  color: #1d3d7c;
+  margin-bottom: 25px;
+}
+
+/* ?????? ????? */
+.btn-hero {
+  background: #0b67b5;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 14px 32px;
+  border-radius: 10px;
+  transition: .25s;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-hero:hover {
+  background: #084c85;
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* ????? */
+.hero-form-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(32, 98, 170, 0.12);
+  border: 1px solid rgba(190, 210, 240, 0.3);
+  padding: 30px;
+}
+
+.hero-form-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b3168;
+  margin-bottom: 20px;
+}
+
+/* ???? ????? */
+.hero-form-card .form-control {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #bdd3e9;
+  transition: .25s;
+  font-size: 16px;
+}
+
+.hero-form-card .form-control:focus {
+  border-color: #0b67b5;
+  box-shadow: 0 0 0 3px rgba(11, 103, 181, .18);
+}
+
+/* ?????? ???????? */
+.hero-submit-btn {
+  width: 100%;
+  background: #0b67b5;
+  color: white;
+  padding: 14px 0;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: .25s;
+  font-size: 17px;
+  border: none;
+}
+
+.hero-submit-btn:hover {
+  background: #084c85;
+  transform: translateY(-2px);
+}
+
+/* Mobile ??????? */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 0 50px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .btn-hero {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .hero-form-card {
+    margin-top: 20px;
+    padding: 25px;
+  }
+
+  .hero-form-title {
+    font-size: 20px;
+  }
+
+  .hero-form-card .form-control {
+    height: 48px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-subtitle {
+    font-size: 15px;
+  }
+  
+  .hero-form-card {
+    padding: 20px;
+  }
+}
+/* ????? ?????? ????? � ???????? */
+.hero-form-card label,
+.hero-form-card input,
+.hero-form-card input::placeholder {
+  color: #0a2a5c !important; /* ?????????? ?????-????? */
+  font-weight: 600;
+}
+
+/* ??? ????? ???????? ????? */
+.hero-form-card {
+  background: #ffffff;
+}
+
+/* ?????? */
+.hero-submit-btn {
+  background: #0b67b5;
+  color: #ffffff;
+}
+
+/* hover ?????? */
+.hero-submit-btn:hover {
+  background: #084c85;
+}
+/* HERO main button */
+.hero-section .btn-hero {
+  display: inline-block;
+  background: #0b67b5;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 13px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  transition: .25s;
+}
+
+.hero-section .btn-hero:hover {
+  background: #084c85;
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+.btn-hero {
+  display: inline-block;
+  background: #0b67b5 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 13px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  transition: .25s;
+}
+
+.btn-hero:hover {
+  background: #084c85 !important;
+  transform: translateY(-2px);
+  color: #ffffff !important;
+}
+.btn hero-btn mt-4 {
+  display: inline-block;
+  background: #0b67b5 !important;
+  color: #08264b !important;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 13px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  transition: .25s;
+}   
+/* ===== SERVICII � ????? ????? ???????? ===== */
+
+.servicii-section {
+  background: #f7fbff;
+}
+
+.servicii-title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0b3168;
+}
+
+.servicii-subtitle {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #5c7699;
+  font-size: 16px;
+}
+
+/* ???????? ?????? */
+.serviciu-card {
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 14px 40px rgba(12, 61, 118, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.serviciu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(12, 61, 118, 0.18);
+}
+
+/* ??????? ???????? */
+.serviciu-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.serviciu-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.serviciu-card:hover .serviciu-img {
+  transform: scale(1.08);
+}
+
+/* ??????? ?????? */
+.serviciu-content {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.serviciu-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0b3168;
+  margin: 0;
+}
+
+.serviciu-text {
+  font-size: 14px;
+  color: #5b7394;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+/* ????? ????? */
+.serviciu-tag {
+  align-self: flex-start;
+  margin-top: 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e4efff;
+  color: #0b3168;
+  font-weight: 600;
+}
+
+/* ??????? ?????? ??????? ??? ?????? ????? ????? */
+.serviciu-tag-business {
+  background: #e6f3ff;
+  color: #0b67b5;
+}
+
+.serviciu-tag-textil {
+  background: #eaf7f2;
+  color: #148f5a;
+}
+
+.serviciu-tag-inaltime {
+  background: #f0ecff;
+  color: #5b3bd5;
+}
+
+.serviciu-tag-post {
+  background: #fff0e2;
+  color: #d97717;
+}
+
+.serviciu-tag-office {
+  background: #e6f5ff;
+  color: #0b5f9c;
+}
+
+.serviciu-tag-home {
+  background: #ffeef6;
+  color: #c72f7a;
+}
+
+.serviciu-tag-ozon {
+  background: #e9fbff;
+  color: #0092b8;
+}
+
+/* ?? ????????? ???? ?????? ??????? ? ?????? ???????? */
+@media (max-width: 767.98px) {
+  .serviciu-img {
+    height: 170px;
+  }
+  
+  .servicii-section .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .servicii-section .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .serviciu-card {
+    margin-bottom: 20px;
+    border-radius: 18px;
+  }
+  
+  .serviciu-content {
+    padding: 16px 18px 18px;
+  }
+  
+  .serviciu-title {
+    font-size: 16px;
+  }
+  
+  .serviciu-text {
+    font-size: 14px;
+  }
+}
+/* ===== SERVICE PAGE ===== */
+
+.service-page {
+  background: #f5f7fb;
+}
+
+/* HERO */
+.service-hero {
+  background: #f5f9ff;
+}
+
+.service-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(11, 103, 181, 0.08);
+  color: #0b67b5;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: 12px;
+}
+
+.service-hero-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0b3168;
+  margin-bottom: 14px;
+}
+
+.service-hero-subtitle {
+  font-size: 16px;
+  color: #355d8a;
+  max-width: 460px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.service-hero-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.service-hero-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #2b486f;
+}
+
+.service-hero-list li::before {
+  content: "\f26e"; /* bi-check-circle-fill */
+  font-family: "Bootstrap-icons";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0b67b5;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.service-hero-image-wrap {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(12, 71, 140, 0.18);
+}
+
+.service-hero-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CTA button */
+.service-cta-btn {
+  background: #0b67b5;
+  color: #fff;
+  font-weight: 600;
+  padding: 11px 28px;
+  border-radius: 12px;
+  border: none;
+  transition: .2s;
+}
+
+.service-cta-btn:hover {
+  background: #084c85;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.service-price-short {
+  font-size: 14px;
+  color: #355d8a;
+}
+
+/* DETAILS */
+.service-details {
+  background: #ffffff;
+}
+
+.service-section-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0b3168;
+  margin-bottom: 15px;
+}
+
+.service-details p {
+  color: #28466d;
+  font-size: 15px;
+}
+
+/* Info card */
+.service-info-card {
+  background: #f5f9ff;
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 12px 30px rgba(11, 103, 181, 0.12);
+  border: 1px solid rgba(189, 211, 233, 0.7);
+}
+
+.service-info-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0b3168;
+  margin-bottom: 10px;
+}
+
+.service-info-list {
+  padding-left: 18px;
+  font-size: 14px;
+  color: #274367;
+}
+
+.service-info-list li {
+  margin-bottom: 4px;
+}
+
+.service-info-price {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0b3168;
+}
+
+/* WHY */
+.service-why {
+  background: #f5f7fb;
+}
+
+.service-why-card {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(19, 76, 140, 0.08);
+}
+
+.service-why-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0b3168;
+  margin-bottom: 6px;
+}
+
+.service-why-card p {
+  font-size: 14px;
+  color: #2b486f;
+  margin-bottom: 0;
+}
+
+/* CTA banner */
+.service-cta-banner {
+  background: linear-gradient(90deg, #0b67b5 0%, #0b83d6 100%);
+  color: #ffffff;
+}
+
+.service-cta-banner-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.service-cta-banner-text {
+  font-size: 15px;
+  opacity: .9;
+}
+
+/* ??????? */
+@media (max-width: 991.98px) {
+  .service-hero-title {
+    font-size: 30px;
+  }
+}
+.lang-switch {
+  font-weight: 600;
+  border: 1px solid #0b67b5;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-left: 16px;
+  transition: .25s;
+}
+
+.lang-switch:hover {
+  background: #0b67b5;
+  color: #fff !important;
+}
+.lang-switch.active {
+  background: #0b67b5;
+  color: #fff !important;
+}
+
+/* Language toggle for mobile and desktop */
+.navbar .lang-toggle,
+.main-menu .lang-toggle {
+  display: inline-flex !important;
+  border: 2px solid #0b67b5 !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.navbar .lang-toggle .lang-switch,
+.main-menu .lang-toggle .lang-switch {
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 4px 12px !important;
+  font-weight: 600;
+  color: #0b67b5 !important;
+  text-decoration: none !important;
+  transition: .25s;
+  position: relative;
+  background: transparent !important;
+}
+
+/* Add separator between buttons */
+.navbar .lang-toggle .lang-switch:not(:last-child)::after,
+.main-menu .lang-toggle .lang-switch:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background-color: #0b67b5;
+  opacity: 0.5;
+}
+
+.navbar .lang-toggle .lang-switch.active,
+.main-menu .lang-toggle .lang-switch.active {
+  background: #0b67b5 !important;
+  color: #fff !important;
+}
+
+.navbar .lang-toggle .lang-switch:hover,
+.main-menu .lang-toggle .lang-switch:hover {
+  background: #0b67b5 !important;
+  color: #fff !important;
+}
+
+/* Override the generic .lang-switch border when inside toggle */
+.navbar .lang-toggle .lang-switch,
+.main-menu .lang-toggle .lang-switch {
+  border: none !important;
+}
+/* ===== MOBILE POLISH ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .topbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  /* Pastreaza logo-ul pe partea opusa meniului pe mobil */
+  .main-menu {
+    position: relative;
+    padding: 10px 0;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    z-index: 1300;
+  }
+
+  .top-logo {
+    position: absolute;
+    right: 15px !important;
+    left: auto !important;    /* evita centrare pe ecrane mici */
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1200;
+  }
+
+  .top-logo img {
+    height: 42px;
+  }
+
+  .main-menu .navbar-nav {
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .main-menu .navbar-nav .nav-link {
+    padding: 10px 14px !important;
+    font-size: 16px;
+  }
+
+  .btn-consult.inner,
+  .btn-consult-top,
+  .btn-consult {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-section {
+    padding: 56px 0;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    margin: 0 auto 22px;
+    max-width: 540px;
+  }
+
+  .hero-section .btn-hero {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-form-card {
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 12px;
+  }
+
+  .hero-form-card .form-control {
+    height: 50px;
+  }
+
+  .steps-section {
+    padding: 48px 0;
+  }
+
+  .steps-kicker {
+    font-size: 14px;
+    text-align: center;
+    color: #0b67b5;
+  }
+
+  .steps-title {
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .steps-intro {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .step-card {
+    max-width: 520px;
+    margin: 0 auto 18px;
+    padding: 20px 18px;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  .step-title {
+    font-size: 18px;
+  }
+
+  .step-text {
+    font-size: 15px;
+  }
+
+  .serviciu-card {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .serviciu-content {
+    padding: 16px 18px 18px;
+  }
+
+  .serviciu-title {
+    font-size: 16px;
+  }
+
+  .serviciu-text {
+    font-size: 14px;
+  }
+
+  .menaj-section {
+    padding: 48px 0;
+  }
+
+  .menaj-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .menaj-subtitle {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 12px;
+    margin-bottom: 30px;
+  }
+
+  .menaj-card {
+    padding: 22px 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  .menaj-card-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .menaj-card > p {
+    font-size: 14px;
+    color: #5c7699;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .menaj-list {
+    margin-top: 10px;
+  }
+
+  .menaj-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 12px 0;
+    border-bottom: 1px solid #d0dce8;
+  }
+
+  .menaj-list li:last-child {
+    border-bottom: none;
+  }
+
+  .menaj-list span {
+    font-size: 16px;
+    font-weight: 800;
+    color: #0b67b5;
+  }
+
+  .menaj-subtitle.text-right.mb-5 {
+    font-size: 13px;
+    color: #6F8FA3;
+    text-align: left !important;
+    margin-top: 4px;
+    margin-bottom: 16px !important;
+    padding-left: 0;
+  }
+
+  /* Fix paragraph inside menaj list */
+  .menaj-list p {
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #6F8FA3;
+    line-height: 1.4;
+    padding-left: 0;
+  }
+
+  .about-company-section {
+    text-align: center;
+    padding: 56px 0;
+  }
+
+  .about-title {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .about-buttons .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .whyus-title,
+  .feedback-title,
+  .servicii-title {
+    text-align: center;
+  }
+
+  .whyus-card {
+    padding: 22px 20px;
+  }
+
+  .whyus-number {
+    right: 14px;
+    bottom: 8px;
+    font-size: 54px;
+  }
+
+  .feedback-card {
+    padding: 22px 20px;
+  }
+
+  .feedback-section .carousel-indicators {
+    bottom: -10px;
+  }
+
+  .banner-overlay {
+    padding: 50px 0;
+  }
+
+  .banner-title {
+    font-size: 26px;
+  }
+
+  .banner-form {
+    padding: 22px;
+  }
+
+  .btn-hero-submit,
+  .btn-banner-submit {
+    font-size: 15px;
+  }
+
+  /* Footer mobile adjustments */
+  .footer-section {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .footer-section .row {
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 13px;
+  }
+
+  .footer-links li {
+    margin-bottom: 6px;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .footer-social a {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .footer-tel {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 12px;
+  }
+}
+
+/* Elimină underline din cardurile de servicii */
+.serviciu-card-link,
+.serviciu-card-link * {
+  text-decoration: none !important;
+}

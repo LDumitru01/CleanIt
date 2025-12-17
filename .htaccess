@@ -1,0 +1,40 @@
+RewriteEngine On
+
+# =====================================================
+# 0. FORCE redirect ro/index.html & ru/index.html -> ro/ / ru/
+# (PRIMA regulă, înainte de orice altceva)
+# =====================================================
+RewriteCond %{THE_REQUEST} \s/+cleanItV2/(ro|ru)/index\.html[\s?] [NC]
+RewriteRule ^(ro|ru)/index\.html$ /cleanItV2/$1/ [R=301,L]
+
+# =====================================================
+# 1. Redirect root /cleanItV2/ -> /cleanItV2/ro/
+# =====================================================
+RewriteRule ^$ ro/ [L,R=301]
+
+# =====================================================
+# 2. Redirect duplicate language prefix (ro/ro/... -> ro/...)
+# =====================================================
+RewriteRule ^(ro|ru)/\1/(.*)$ /cleanItV2/$1/$2 [R=301,L]
+
+# =====================================================
+# 3. Elimină extensia .html din URL (extern)
+# ex: /ro/price.html -> /ro/price
+# =====================================================
+RewriteCond %{THE_REQUEST} \s/+cleanItV2/(.+?)\.html[\s?] [NC]
+RewriteRule ^(.+?)\.html$ /cleanItV2/$1 [R=301,L]
+
+# =====================================================
+# 4. Servește fișierele .html intern
+# ex: /ro/price -> /ro/price.html
+# =====================================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# =====================================================
+# 5. Asigură slash final pentru directoare
+# ex: /ro -> /ro/
+# =====================================================
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ /cleanItV2/$1/ [L]
