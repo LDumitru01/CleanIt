@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Stiluri globale -->
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styleprice.css" />
+
+  <title>Curățenie scări de bloc în Chișinău – CleanIt</title>
+  <meta name="description"
+        content="Curățenie profesională scări de bloc în Chișinău. Spălare podele, igienizare intrări, curățare balustrade, lifturi și spații comune. Contracte avantajoase pentru asociații de locatari.">
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJPRQZXNV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EYJPRQZXNV');
+  </script>
+</head>
+<body>
+
+<!-- MENIU -->
+<?php require_once __DIR__ . '/menu.php'; ?>
+<!-- MENIU GLOBAL -->
+
+
+<main class="service-page">
+
+  <!-- HERO -->
+  <section class="service-hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- TEXT -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <span class="service-badge">Asociații de locatari & blocuri rezidențiale</span>
+
+          <h1 class="service-hero-title">
+            Curățenie profesională scări de bloc în Chișinău
+          </h1>
+
+          <p class="service-hero-subtitle">
+            Întreținere completă și constantă a scărilor de bloc, holurilor
+            și spațiilor comune — pentru un mediu curat, sigur și respectuos
+            pentru toți locatarii.
+          </p>
+
+          <ul class="service-hero-list">
+            <li>Curățenie zilnică, săptămânală sau conform graficului stabilit</li>
+            <li>Produse profesionale, fără mirosuri agresive</li>
+            <li>Monitorizare și raportare foto la cerere</li>
+            <li>Contract oficial cu asociația de locatari</li>
+          </ul>
+
+          <button
+            type="button"
+            class="btn service-cta-btn mt-3"
+            data-toggle="modal"
+            data-target="#consultModal">
+            Solicitați ofertă personalizată
+          </button>
+        </div>
+
+        <!-- IMAGINE -->
+        <div class="col-lg-5 offset-lg-1">
+          <img src="img/uborka-podezdov.jpg"
+               alt="Curățenie scări de bloc Chișinău"
+               class="img-fluid service-hero-image" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DETALII -->
+  <section class="service-details py-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- LEFT -->
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="service-section-title">
+            Ce include serviciul de curățenie a scărilor de bloc?
+          </h2>
+
+          <ul class="service-info-list">
+            <li>Măturare și spălare pardoseli pe fiecare nivel</li>
+            <li>Curățare trepte, paliere și holuri comune</li>
+            <li>Spălare balustrade, mânere, panouri și lifturi</li>
+            <li>Ștergere cutii poștale și aviziere</li>
+            <li>Curățare uși de acces și intrări principale</li>
+            <li>Colectare gunoi și schimbare saci</li>
+            <li>Îndepărtare pânze de păianjen</li>
+            <li>Dezinfectare periodică, la solicitare</li>
+          </ul>
+
+          <p class="mt-3">
+            La cerere, putem include servicii suplimentare:
+            spălare geamuri, curățare subsoluri, rampe de acces,
+            curți interioare sau zone exterioare.
+          </p>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="col-lg-5">
+          <div class="service-info-card">
+            <h3 class="service-info-title">Preț orientativ</h3>
+
+            <p class="service-note">
+              Costul final depinde de numărul etajelor,
+              suprafața totală, frecvența intervențiilor
+              și serviciile suplimentare solicitate.
+            </p>
+
+            <button
+              type="button"
+              class="btn btn-block service-cta-btn mt-3"
+              data-toggle="modal"
+              data-target="#consultModal">
+              Calculați prețul exact
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICII -->
+  <section class="service-why py-5">
+    <div class="container text-center">
+      <h2 class="service-section-title mb-4">
+        De ce asociațiile aleg CleanIt?
+      </h2>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Punctualitate și disciplină</h3>
+            <p>
+              Respectăm graficul stabilit cu administratorul
+              și menținem consecvența lucrărilor.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Echipamente profesionale</h3>
+            <p>
+              Utilizăm soluții certificate, sigure pentru copii,
+              persoane în vârstă și animale de companie.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Contract & responsabilitate</h3>
+            <p>
+              Facturare oficială, responsabilitate juridică
+              și transparență totală.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <?php include 'servicii-section.php' ?>
+
+  <!-- CTA -->
+  <section class="service-cta-banner py-4">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+      <div class="text-center text-lg-left mb-3 mb-lg-0">
+        <h2 class="service-cta-banner-title">
+          Sunteți administrator sau președinte de asociație?
+        </h2>
+        <p class="service-cta-banner-text">
+          Trimiteți adresa blocului și revenim cu ofertă în maximum 15 minute.
+        </p>
+      </div>
+
+      <button
+        type="button"
+        class="btn service-cta-btn"
+        data-toggle="modal"
+        data-target="#consultModal">
+        Contactați-ne
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"><?php
+include 'footer.php';
+?></div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+<script src="../leads.js"></script>
+
+</body>
+</html>

@@ -158,34 +158,52 @@ html body {
     font-size: 26px;
   }
 }
-/* ===== FIX MEGAMENU ===== */
-.megamenu {
-  position: static !important;
+.navbar.main-menu > .container {
+  position: relative;
+}
+
+.navbar.main-menu .navbar-nav,
+.navbar.main-menu .dropdown.megamenu {
+  position: static;
 }
 
 .megamenu .dropdown-menu {
-  width: 100vw !important; /* ?? ??? ?????? ???? */
-  left: 0 !important;
-  right: 0 !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  margin-top: 0 !important;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 100%;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin-top: 0;
+  display: none;
+  position: absolute;
+  z-index: 1050;
+  background: transparent;
 }
 
-.megamenu-content .container {
+.megamenu.show .dropdown-menu,
+.megamenu .dropdown-menu.show,
+.dropdown.show .dropdown-menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.megamenu-content > .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background: white;
+  background: #ffffff;
   padding: 30px 40px;
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-.megamenu-content img {
-  max-width: 350px;
-  border-radius: 8px;
+@media (max-width: 991.98px) {
+  .megamenu .dropdown-menu {
+    position: static;
+  }
 }
 
 /* ===== MENAJ SECTION ===== */
@@ -199,7 +217,9 @@ html body {
   text-align: center;
   font-weight: 900;
   font-size: 34px;
-  color: #1F3B63;
+  background: linear-gradient(90deg, #0b3168, #3fa9f5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
@@ -295,7 +315,9 @@ html body {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 38px;
-  color: #1F6FA5;
+  background: linear-gradient(90deg, #0b3168, #3fa9f5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 1.1;
   margin-bottom: 20px;
 }
@@ -418,7 +440,9 @@ html body {
   font-size: clamp(26px, 3vw, 32px);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #1F6FA5;
+  background: linear-gradient(90deg, #0b3168, #3fa9f5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
 }
 
@@ -552,7 +576,9 @@ html body {
   font-weight: 800;
   font-size: 30px;
   text-transform: uppercase;
-  color: #1F6FA5;
+  background: linear-gradient(90deg, #0b3168, #3fa9f5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .feedback-card {
@@ -1380,6 +1406,7 @@ html body {
   text-decoration: underline;
 }
 
+
 /* ----------------------------- */
 /*   ????? ??????                */
 /* ----------------------------- */
@@ -1807,7 +1834,9 @@ html body {
   font-size: 46px;
   font-weight: 800;
   line-height: 1.1;
-  color: #0a2a5c;
+   background: linear-gradient(90deg, #0b3168, #3fa9f5);
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -2027,7 +2056,10 @@ html body {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #0b3168;
+  
+   background: linear-gradient(90deg, #0b3168, #3fa9f5);
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .servicii-subtitle {
@@ -2445,6 +2477,10 @@ html body {
 .main-menu .lang-toggle .lang-switch {
   border: none !important;
 }
+.navbar.main-menu {
+  position: relative;
+}
+
 /* ===== MOBILE POLISH ===== */
 @media (max-width: 768px) {
   body {

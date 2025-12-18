@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Стили сайта -->
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styleprice.css" />
+
+  <title>Уборка подъездов в Кишинёве – CleanIt</title>
+  <meta name="description"
+        content="Профессиональная уборка подъездов в Кишинёве. Мытьё полов, дезинфекция входных групп, перил и лифтов. Официальные договоры для ТСЖ и управляющих компаний.">
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJPRQZXNV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EYJPRQZXNV');
+  </script>
+</head>
+<body>
+
+<!-- МЕНЮ -->
+<?php require_once __DIR__ . '/menu.php'; ?>
+<!-- MENIU GLOBAL -->
+
+
+<main class="service-page">
+
+  <!-- HERO -->
+  <section class="service-hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- ТЕКСТ -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <span class="service-badge">ТСЖ · Жилые дома · Управляющие компании</span>
+
+          <h1 class="service-hero-title">
+            Профессиональная уборка подъездов в Кишинёве
+          </h1>
+
+          <p class="service-hero-subtitle">
+            Комплексная и регулярная уборка подъездов, лестничных клеток
+            и общих зон — чистота, безопасность и комфорт для жильцов
+            вашего дома.
+          </p>
+
+          <ul class="service-hero-list">
+            <li>Ежедневная, еженедельная или плановая уборка</li>
+            <li>Профессиональные средства без резкого запаха</li>
+            <li>Контроль качества и фотоотчёты по запросу</li>
+            <li>Официальный договор с ТСЖ или ассоциацией жильцов</li>
+          </ul>
+
+          <button
+            type="button"
+            class="btn service-cta-btn mt-3"
+            data-toggle="modal"
+            data-target="#consultModal">
+            Запросить коммерческое предложение
+          </button>
+        </div>
+
+        <!-- ИЗОБРАЖЕНИЕ -->
+        <div class="col-lg-5 offset-lg-1">
+          <img src="img/uborka-podezdov.jpg"
+               alt="Уборка подъездов в Кишинёве"
+               class="img-fluid service-hero-image" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ОПИСАНИЕ -->
+  <section class="service-details py-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- ЛЕВО -->
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="service-section-title">
+            Что входит в уборку подъездов?
+          </h2>
+
+          <ul class="service-info-list">
+            <li>Подметание и мытьё полов на всех этажах</li>
+            <li>Очистка лестниц, площадок и общих коридоров</li>
+            <li>Мытьё перил, поручней, лифтов и кнопок</li>
+            <li>Протирка почтовых ящиков и информационных стендов</li>
+            <li>Очистка входных дверей и тамбуров</li>
+            <li>Сбор мусора и замена пакетов</li>
+            <li>Удаление паутины и загрязнений</li>
+            <li>Периодическая дезинфекция (по запросу)</li>
+          </ul>
+
+          <p class="mt-3">
+            По желанию предоставляем дополнительные услуги:
+            мытьё окон, уборка подвалов, пандусов, входных зон
+            и прилегающих территорий.
+          </p>
+        </div>
+
+        <!-- ПРАВО -->
+        <div class="col-lg-5">
+          <div class="service-info-card">
+            <h3 class="service-info-title">Ориентировочная стоимость</h3>
+
+            <p class="service-note">
+              Цена формируется индивидуально и зависит от количества этажей,
+              общей площади, частоты уборки и дополнительных задач.
+            </p>
+
+            <button
+              type="button"
+              class="btn btn-block service-cta-btn mt-3"
+              data-toggle="modal"
+              data-target="#consultModal">
+              Рассчитать точную стоимость
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРЕИМУЩЕСТВА -->
+  <section class="service-why py-5">
+    <div class="container text-center">
+      <h2 class="service-section-title mb-4">
+        Почему ТСЖ выбирают CleanIt?
+      </h2>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Пунктуальность и дисциплина</h3>
+            <p>
+              Работаем строго по согласованному графику
+              с администратором дома.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Профессиональные средства</h3>
+            <p>
+              Сертифицированные, безопасные растворы
+              для детей, пожилых людей и животных.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Официальный договор</h3>
+            <p>
+              Прозрачная отчётность, ответственность
+              и юридические гарантии.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <?php include 'servicii-section.php'; ?>
+
+  <!-- CTA -->
+  <section class="service-cta-banner py-4">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+      <div class="text-center text-lg-left mb-3 mb-lg-0">
+        <h2 class="service-cta-banner-title">
+          Вы администратор дома или председатель ТСЖ?
+        </h2>
+        <p class="service-cta-banner-text">
+          Отправьте адрес дома — мы подготовим предложение в течение 15 минут.
+        </p>
+      </div>
+
+      <button
+        type="button"
+        class="btn service-cta-btn"
+        data-toggle="modal"
+        data-target="#consultModal">
+        Связаться с нами
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"><?php
+include 'footer.php';
+?></div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+<script src="../leads.js"></script>
+
+</body>
+</html>

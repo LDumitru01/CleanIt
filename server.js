@@ -9,13 +9,13 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ⚠️ IMPORTANT: dezactivăm index.html automat
+// ⚠️ IMPORTANT: dezactivăm index.php automat
 app.use(express.static(__dirname, { index: false }));
 
-// ===== REDIRECT .html REQUESTS TO CLEAN URLS =====
+// ===== REDIRECT .php REQUESTS TO CLEAN URLS =====
 app.use((req, res, next) => {
-  if (req.path.endsWith('.html')) {
-    const cleanPath = req.path.slice(0, -5); // remove .html
+  if (req.path.endsWith('.php')) {
+    const cleanPath = req.path.slice(0, -5); // remove .php
     return res.redirect(301, cleanPath + (req.query ? '?' + new URLSearchParams(req.query).toString() : ''));
   }
   next();
@@ -32,19 +32,19 @@ app.use((req, res, next) => {
   next();
 });
 
-// ===== SERVE .html FILES FOR CLEAN URLS =====
+// ===== SERVE .php FILES FOR CLEAN URLS =====
 app.use((req, res, next) => {
-  const filePath = path.join(__dirname, req.path + '.html');
-  // Check if .html file exists
+  const filePath = path.join(__dirname, req.path + '.php');
+  // Check if .php file exists
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (!err) {
       return res.sendFile(filePath);
     }
-    // If not, check if it's a directory and serve index.html inside
+    // If not, check if it's a directory and serve index.php inside
     const dirPath = path.join(__dirname, req.path);
     fs.access(dirPath, fs.constants.F_OK, (errDir) => {
       if (!errDir && fs.statSync(dirPath).isDirectory()) {
-        const indexFile = path.join(dirPath, 'index.html');
+        const indexFile = path.join(dirPath, 'index.php');
         fs.access(indexFile, fs.constants.F_OK, (errIndex) => {
           if (!errIndex) {
             return res.sendFile(indexFile);
@@ -60,11 +60,11 @@ app.use((req, res, next) => {
 
 // ===== PAGINA PRINCIPALĂ (/) =====
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "index.php"));
 });
 
-// ===== BLOCARE ACCES DIRECT /index.html =====
-app.get("/index.html", (req, res) => {
+// ===== BLOCARE ACCES DIRECT /index.php =====
+app.get("/index.php", (req, res) => {
   res.redirect(301, "/");
 });
 

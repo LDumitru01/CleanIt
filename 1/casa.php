@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Curățenie case / vile</title>
+</head>
+<body>
+
+<?php require_once __DIR__ . '/menu.php'; ?>
+<!-- MENIU GLOBAL -->
+
+
+<script>
+fetch("../menu.php")
+  .then(r => r.text())
+  .then(html => document.getElementById("menu-container").innerHTML = html);
+</script>
+
+
+<!-- ОСНОВНОЙ КОНТЕНТ СТРАНИЦЫ -->
+<section class="container py-5">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-white px-0">
+      <li class="breadcrumb-item"><a href="/">Servicii</a></li>
+      <li class="breadcrumb-item"><a href="#">Persoane fizice</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Curățenie case / vile</li>
+    </ol>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-7">
+      <h1 class="service-title">Curățenie case / vile</h1>
+
+      <p>
+        Acest serviciu diferă prin suprafață și complexitate față de serviciul de curățenie a apartamentului.
+        Suprafața mai mare, multe camere, curățenie în curte, grădină, subsol, garaj, parcare și alte spații…
+      </p>
+
+      <ul class="service-list">
+        <li>Aerisirea spațiilor interioare</li>
+        <li>Ștergerea prafului de pe jaluzele, rafturi, pervaze</li>
+        <li>Aspirarea covoarelor și a mochetei</li>
+        <li>Curățarea geamurilor (interior/exterior)</li>
+        <li>Curățare praf mobilă și electrocasnice</li>
+        <li>Curățarea prizelor și întrerupătoarelor</li>
+        <li>Curățarea exterioră a caloriferelor</li>
+        <li>Ștergere pardoseli</li>
+        <li>Spălare suprafețe dure</li>
+        <li>Curățarea mobilierului moale / piele</li>
+        <li>Curățenie curte, alei, terasă</li>
+        <li>Curățare fațadă</li>
+        <li>Tuns gazon</li>
+        <li>Alte servicii la cerere</li>
+      </ul>
+    </div>
+
+    <div class="col-md-5">
+      <img src="../img/case.jpg" class="img-fluid rounded shadow" alt="">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Футер -->
+<div id="footer-container"><?php
+include 'footer.php';
+?></div>
+<script>
+fetch("../footer.php")
+  .then(r => r.text())
+  .then(html => document.getElementById("footer-container").innerHTML = html);
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

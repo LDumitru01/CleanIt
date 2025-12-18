@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        crossorigin="anonymous" />
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Project styles -->
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styleprice.css" />
+
+  <title>Профессиональная уборка коммерческих и промышленных помещений в Кишинёве – CleanIt</title>
+  <meta name="description"
+        content="Профессиональная уборка коммерческих и промышленных помещений в Кишинёве. Магазины, склады, производственные цеха, бизнес-центры и open-space офисы. Уборка B2B с договором и гибким графиком.">
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJPRQZXNV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EYJPRQZXNV');
+  </script>
+</head>
+<body>
+
+<!-- MENU -->
+<?php require_once __DIR__ . '/menu.php'; ?>
+<!-- MENIU GLOBAL -->
+
+
+<main class="service-page">
+
+  <!-- HERO -->
+  <section class="service-hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- TEXT -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <span class="service-badge">Юридические лица · B2B</span>
+
+          <h1 class="service-hero-title">
+            Уборка коммерческих и промышленных помещений
+          </h1>
+
+          <p class="service-hero-subtitle">
+            Профессиональные клининговые услуги для коммерческих,
+            промышленных и логистических объектов — чистота, безопасность
+            и порядок для стабильной работы бизнеса.
+          </p>
+
+          <ul class="service-hero-list">
+            <li>Магазины, супермаркеты и шоурумы</li>
+            <li>Склады, производственные цеха и заводы</li>
+            <li>Open-space офисы, ресепшн и бизнес-центры</li>
+            <li>Профессиональная дезинфекция и санитарная обработка</li>
+            <li>Ежедневная, регулярная или договорная уборка</li>
+          </ul>
+
+          <div class="mt-4 d-flex flex-wrap align-items-center">
+            <button
+              type="button"
+              class="btn service-cta-btn mr-3 mb-3"
+              data-toggle="modal"
+              data-target="#consultModal">
+              Запросить индивидуальное предложение
+            </button>
+            <div class="service-price-short mb-3">
+              <span>стоимость зависит от площади и графика</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="col-lg-5 offset-lg-1">
+          <div class="service-hero-image-wrap">
+            <img src="img/spatii-industriale-cleaning.jpg"
+                 alt="Уборка коммерческих и промышленных помещений в Кишинёве"
+                 class="img-fluid service-hero-image" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="service-details py-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- TEXT -->
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="service-section-title">
+            Уборка, адаптированная под специфику бизнеса
+          </h2>
+
+          <p>
+            Каждый коммерческий или промышленный объект имеет свои
+            особенности. Мы разрабатываем индивидуальный план уборки
+            с учетом типа деятельности, поверхностей и интенсивности работы.
+          </p>
+
+          <p>
+            Наш персонал обучен работе в зонах с повышенной нагрузкой,
+            промышленным оборудованием и техническими помещениями.
+            Используем профессиональные моющие средства и соблюдаем нормы безопасности.
+          </p>
+
+          <p>
+            Работаем в удобное для вас время — до или после рабочего дня,
+            ночью или в выходные, не нарушая производственный процесс.
+          </p>
+        </div>
+
+        <!-- CARD -->
+        <div class="col-lg-5">
+          <div class="service-info-card">
+            <h3 class="service-info-title">В услугу входит:</h3>
+
+            <ul class="service-info-list">
+              <li>Подметание, пылесос и мытьё больших площадей</li>
+              <li>Очистка стеллажей, витрин, рабочих столов</li>
+              <li>Санитарная обработка раздевалок и техпомещений</li>
+              <li>Уборка и дезинфекция санузлов</li>
+              <li>Дезинфекция зон повышенного риска</li>
+              <li>Сбор и вывоз мусора</li>
+            </ul>
+
+            <div class="service-info-price">
+              Ориентировочная цена: <strong>18–35 лей / м²</strong><br />
+              <span>Точная стоимость после осмотра объекта.</span>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-block service-cta-btn mt-3"
+              data-toggle="modal"
+              data-target="#consultModal">
+              Бесплатная оценка объекта
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="service-why py-5">
+    <div class="container">
+      <h2 class="service-section-title text-center mb-4">
+        Почему компании выбирают CleanIt
+      </h2>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Промышленное оборудование</h3>
+            <p>
+              Профессиональная техника для больших и сложных объектов.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Эффективность и стабильность</h3>
+            <p>
+              Четкий график, постоянная команда, предсказуемый результат.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Договор и официальная оплата</h3>
+            <p>
+              Полная юридическая ответственность и отчетность.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <?php include 'servicii-section.php'; ?>
+
+  <!-- CTA -->
+  <section class="service-cta-banner py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <div class="mb-3 mb-lg-0">
+          <h2 class="service-cta-banner-title mb-1">
+            Нужна профессиональная уборка для вашего бизнеса?
+          </h2>
+          <p class="mb-0 service-cta-banner-text">
+            Свяжитесь с нами для бесплатной консультации и расчёта.
+          </p>
+        </div>
+
+        <a href="https://wa.me/37362199439" class="btn service-cta-btn">
+          Получить консультацию
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"><?php
+include 'footer.php';
+?></div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<script src="../leads.js"></script>
+
+</body>
+</html>

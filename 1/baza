@@ -16,18 +16,22 @@
   <title>CLEANIT</title>
 </head>
 <body>
-  <div id="menu-container"></div>
-    <div id="footer-container"></div>
+  <?php require_once __DIR__ . '/menu.php'; ?>
+<!-- MENIU GLOBAL -->
+
+    <div id="footer-container"><?php
+include 'footer.php';
+?></div>
   
   <script>
-fetch("menu.html")
+fetch("menu.php")
   .then(response => response.text())
   .then(data => {
     document.getElementById("menu-container").innerHTML = data;
   });
 </script>
   <script>
-fetch("footer.html")
+fetch("footer.php")
   .then(response => response.text())
   .then(data => {
     document.getElementById("footer-container").innerHTML = data;

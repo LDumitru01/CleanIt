@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../styleprice.css">
+
+  <title>Профессиональная стирка и глажка штор и портьер в Кишинёве – CleanIt</title>
+  <meta name="description"
+        content="Профессиональная стирка и глажка штор и портьер в Кишинёве. Демонтаж, стирка, отпаривание и монтаж. Для квартир, домов, офисов, ресторанов и отелей.">
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJPRQZXNV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EYJPRQZXNV');
+  </script>
+</head>
+<body>
+
+<!-- MENU -->
+<?php require_once __DIR__ . '/menu.php'; ?>
+<!-- MENIU GLOBAL -->
+
+
+<main class="service-page">
+
+  <!-- HERO -->
+  <section class="service-hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- TEXT -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <span class="service-badge">Частные лица</span>
+
+          <h1 class="service-hero-title">
+            Стирка и глажка штор и портьер
+          </h1>
+
+          <p class="service-hero-subtitle">
+            Профессиональный сервис по демонтажу, стирке, сушке и глажке
+            штор и портьер — для квартир, домов, офисов, ресторанов
+            и коммерческих помещений.
+          </p>
+
+          <ul class="service-hero-list">
+            <li>Демонтаж и установка штор</li>
+            <li>Профессиональная стирка, включая деликатные ткани</li>
+            <li>Отпаривание и антибактериальная обработка</li>
+            <li>Без деформации и потери цвета</li>
+            <li>Забор и доставка на дом — по желанию</li>
+          </ul>
+
+          <div class="mt-4 d-flex flex-wrap align-items-center">
+            <button
+              type="button"
+              class="btn service-cta-btn mr-3 mb-3"
+              data-toggle="modal"
+              data-target="#consultModal">
+              Заказать услугу
+            </button>
+
+            <div class="service-price-short mb-3">
+              От <strong>25–45 леев / м²</strong><br>
+              <span>в зависимости от ткани и сложности</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="col-lg-5 offset-lg-1">
+          <div class="service-hero-image-wrap">
+            <img src="img/eko-klining-elit-1-770x560.jpg"
+                 alt="Стирка и глажка штор и портьер"
+                 class="img-fluid service-hero-image">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="service-details py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="service-section-title">Как мы работаем?</h2>
+
+          <p>
+            Шторы и портьеры накапливают пыль, запахи, аллергены и бактерии,
+            при этом являются одними из самых деликатных текстильных изделий.
+            Мы используем щадящие программы стирки, контролируемую температуру,
+            естественную сушку и профессиональное отпаривание.
+          </p>
+
+          <p>
+            По желанию наша команда самостоятельно снимает шторы,
+            выполняет стирку и глажку, а затем возвращает их
+            уже полностью готовыми к использованию.
+          </p>
+
+          <p class="mb-0">
+            Услуга подходит для квартир, домов, гостиниц, офисов,
+            ресторанов и коммерческих помещений.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="service-info-card">
+            <h3 class="service-info-title">Краткая информация</h3>
+
+            <ul class="service-info-list">
+              <li><strong>Срок выполнения:</strong> 24–72 часа</li>
+              <li><strong>Забор и доставка:</strong> по желанию</li>
+              <li><strong>Метод:</strong> профессиональная стирка + отпаривание</li>
+              <li><strong>Ткани:</strong> тюль, хлопок, бархат, blackout, лен, сатин</li>
+            </ul>
+
+            <div class="service-info-price">
+              Ориентировочная цена: <strong>25–45 леев / м²</strong><br>
+              <span>точный расчет по фото или замерам</span>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-block service-cta-btn mt-3"
+              data-toggle="modal"
+              data-target="#consultModal">
+              Получить точную цену
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="service-why py-5">
+    <div class="container">
+      <h2 class="service-section-title text-center mb-4">
+        Почему выбирают CleanIt
+      </h2>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Бережное отношение</h3>
+            <p>
+              Специальные технологии для деликатных тканей —
+              без усадки, выцветания и повреждений.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Полная гигиена</h3>
+            <p>
+              Удаляем пыль, аллергены, клещей и запахи —
+              идеально для детей и аллергиков.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Без забот</h3>
+            <p>
+              Снимаем, стираем, гладим и вешаем обратно —
+              вы наслаждаетесь результатом.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <?php include 'servicii-section.php'; ?>
+
+  <!-- CTA -->
+  <section class="service-cta-banner py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <div class="mb-3 mb-lg-0">
+          <h2 class="service-cta-banner-title mb-1">
+            Шторы нуждаются в обновлении?
+          </h2>
+          <p class="mb-0 service-cta-banner-text">
+            Отправьте фото в WhatsApp — получите точную цену быстро.
+          </p>
+        </div>
+
+        <a href="https://wa.me/37362199439" class="btn service-cta-btn">
+          Написать в WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"><?php
+include 'footer.php';
+?></div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<script src="../leads.js"></script>
+
+</body>
+</html>

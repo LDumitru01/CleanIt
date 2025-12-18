@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        crossorigin="anonymous" />
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Глобальные стили -->
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styleprice.css" />
+
+  <title>Уборка до и после мероприятия – CleanIt</title>
+  <meta name="description"
+        content="Быстрая уборка до и после мероприятий в Кишинёве: вечеринки, конференции, свадьбы, дни рождения, корпоративы. Работаем 24/7, выезд в срочном порядке.">
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJPRQZXNV">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EYJPRQZXNV');
+</script>
+</head>
+<body>
+
+<!-- МЕНЮ -->
+<?php require_once __DIR__ . '/menu.php'; ?>
+<!-- MENIU GLOBAL -->
+
+
+<main class="service-page">
+
+  <!-- HERO -->
+  <section class="service-hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- ТЕКСТ -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <span class="service-badge">Юридические и физические лица</span>
+          <h1 class="service-hero-title">
+            Уборка до и после мероприятия
+          </h1>
+          <p class="service-hero-subtitle">
+            Организация мероприятия — это эмоции и заботы, но уборка не должна быть одной из них.
+            Мы подготавливаем пространство к приёму гостей и возвращаем его в идеальное состояние после окончания события.
+          </p>
+
+          <ul class="service-hero-list">
+            <li>Работаем 24/7, включая выходные и праздники</li>
+            <li>Быстрый выезд до и после вечеринок</li>
+            <li>Подходит для квартир, офисов, залов, террас, ресторанов</li>
+            <li>Профессиональная химия, без аллергенов</li>
+          </ul>
+
+          <div class="mt-4 d-flex flex-wrap align-items-center">
+            <button
+              type="button"
+              class="btn service-cta-btn mr-3 mb-3"
+              data-toggle="modal"
+              data-target="#consultModal">
+              Записаться на уборку
+            </button>
+            <div class="service-price-short mb-3">
+              <span>в зависимости от площади и объёма работ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ИЗОБРАЖЕНИЕ -->
+        <div class="col-lg-5 offset-lg-1">
+          <div class="service-hero-image-wrap">
+            <img src="img/3f6c3b29e56396b5d59d8b45dc266f62.jpg"
+                 alt="Уборка после вечеринки"
+                 class="img-fluid service-hero-image" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ДЕТАЛИ -->
+  <section class="service-details py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="service-section-title">Быстрая и эффективная уборка</h2>
+          <p>
+            Наша команда приведёт пространство в порядок до мероприятия, чтобы создать идеальное первое впечатление,
+            а затем приедет после — чтобы вернуть чистоту, свежесть и гигиену.
+          </p>
+          <p>
+            Идеально для домашних вечеринок, корпоративов, дней рождения, крестин,
+            тренингов, конференций, фуршетов, свадеб и мероприятий на открытом воздухе.
+          </p>
+          <p>
+            Мы можем приехать в тот же день — в зависимости от загруженности.
+          </p>
+        </div>
+
+        <!-- КАРТОЧКА -->
+        <div class="col-lg-5">
+          <div class="service-info-card">
+            <h3 class="service-info-title">В услугу входит:</h3>
+            <ul class="service-info-list">
+              <li>Сбор мусора и сортировка отходов</li>
+              <li>Мытьё полов и поверхностей</li>
+              <li>Чистка столов, стульев и мебели</li>
+              <li>Уборка и дезинфекция кухни и санузлов</li>
+              <li>Проветривание и устранение запахов</li>
+              <li>Мойка бокалов, посуды и аксессуаров</li>
+            </ul>
+
+            <div class="service-info-price">
+              Ориентировочная цена: <strong>600–3500 лей</strong><br />
+              <span>Точная стоимость — после бесплатной оценки пространства и объёма работ.</span>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-block service-cta-btn mt-3"
+              data-toggle="modal"
+              data-target="#consultModal">
+              Запросить персональное предложение
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРЕИМУЩЕСТВА -->
+  <section class="service-why py-5">
+    <div class="container">
+      <h2 class="service-section-title text-center mb-4">
+        Почему стоит выбрать CleanIt?
+      </h2>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Специализированная команда</h3>
+            <p>
+              Оперативно и аккуратно убираем после любых мероприятий — без стресса для вас.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Быстрая реакция</h3>
+            <p>
+              Приезжаем в течение нескольких часов, в том числе ночью и в выходные.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="service-why-card">
+            <h3>Без скрытых платежей</h3>
+            <p>
+              Фиксируем цену до начала работы — без неожиданных доплат.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФИНАЛЬНЫЙ CTA -->
+  <section class="service-cta-banner py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <div class="mb-3 mb-lg-0">
+          <h2 class="service-cta-banner-title mb-1">
+            Недавно было мероприятие?
+          </h2>
+          <p class="mb-0 service-cta-banner-text">
+            Мы готовы приехать и навести порядок — звоните прямо сейчас!
+          </p>
+        </div>
+
+        <a href="tel:+37362199439" class="btn service-cta-btn">
+          +373 621 994 39
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"><?php
+include 'footer.php';
+?></div>
+
+<!-- Загрузка меню и футера -->
+<script>
+  fetch("menu.php")
+    .then(r => r.text())
+    .then(html => (document.getElementById("menu-container").innerHTML = html));
+
+  fetch("footer.php")
+    .then(r => r.text())
+    .then(html => (document.getElementById("footer-container").innerHTML = html));
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<!-- Общий обработчик всех форм (страница + модалка) -->
+<script src="../leads.js"></script>
+
+
+</body>
+</html>

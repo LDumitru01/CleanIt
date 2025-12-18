@@ -1,0 +1,294 @@
+<!-- ===================== TOP BAR ===================== -->
+<nav class="topbar">
+  <div class="container d-flex justify-content-between align-items-center py-2">
+    <div class="d-flex align-items-center">
+      <a href="tel:+37362199439" class="top-icon-btn">
+        <i class="bi bi-telephone-fill"></i>
+      </a>
+
+      <a href="tel:+37362199439" class="top-icon-btn secondary">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+
+      <div class="phone-text ml-3">
+        <span>CONSULTAȚIE GRATUITĂ</span><br>
+        <a href="tel:+37362199439" class="phone-number">+373 621 994 39</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== MAIN MENU ===================== -->
+<nav class="navbar navbar-expand-lg main-menu">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a href="./" class="top-logo">
+      <img src="img/logoclean.png" alt="CLEANIT">
+    </a>
+
+    <!-- HAMBURGER -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu">
+      <span class="navbar-toggler-icon">
+        <i class="bi bi-list"></i>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav mx-auto">
+
+        <!-- PERSOANE FIZICE -->
+        <li class="nav-item dropdown megamenu">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PERSOANE FIZICE</a>
+          <div class="dropdown-menu megamenu-content">
+            <div class="container">
+              <ul class="mega-list">
+                <li><a href="curatenie-generala-apartament">Curățenie generală în apartament</a></li>
+                <li><a href="curatenie-case-vile">Curățenie case / vile</a></li>
+                <li><a href="spalare-calcare-perdele-draperii">Spălare perdele / draperii</a></li>
+                <li><a href="curatare-profunda-bucatarie">Curățenie bucătărie</a></li>
+                <li><a href="curatenie-profesionala-baie-bloc-sanitar">Curățenie bloc sanitar</a></li>
+                <li><a href="curatenie-dupa-reparatie">Curățenie după reparație</a></li>
+                <li><a href="curatenie-de-intretinere">Curățenie de întreținere</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- PERSOANE JURIDICE -->
+        <li class="nav-item dropdown megamenu">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PERSOANE JURIDICE</a>
+          <div class="dropdown-menu megamenu-content">
+            <div class="container">
+              <ul class="mega-list">
+                <li><a href="curatenie-generala-birouri">Curățenie birouri</a></li>
+                <li><a href="curatenie-spatii-hotiliere">Curățenie spații hoteliere</a></li>
+                <li><a href="curatenie-profesionala-restaurante">Curățenie restaurante</a></li>
+                <li><a href="curatenie-institutii-de-invatamant">Curățenie școli</a></li>
+                <li><a href="curatenie-spatii-comerciale-industriale">Curățenie spații comerciale</a></li>
+                <li><a href="curatenie-fabrici-depozite-parcari">Curățenie fabrici / depozite</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- ALTE SERVICII -->
+        <li class="nav-item dropdown megamenu">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">ALTE SERVICII</a>
+          <div class="dropdown-menu megamenu-content">
+            <div class="container">
+              <ul class="mega-list">
+                <li><a href="curatenie-scari-bloc-chisinau">Curățenie scări bloc</a></li>
+                <li><a href="curatare-chimica-mobila">Curățare chimică mobilă</a></li>
+                <li><a href="spalare-fatade-stcila-etalbond">Spălare fațade</a></li>
+                <li><a href="curatare-chimica-saltele">Curățare saltele</a></li>
+                <li><a href="curatenie-in-curte">Curățenie curte</a></li>
+                <li><a href="spalare-geamuri">Spălare geamuri</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- PRETURI -->
+        <li class="nav-item">
+          <a class="nav-link" href="price">PREȚURI</a>
+        </li>
+
+        <!-- LANG MOBILE -->
+        <li class="nav-item d-lg-none">
+          <div class="lang-toggle d-flex">
+            <a href="./" class="lang-switch active">RO</a>
+            <a href="../ru/" class="lang-switch">RU</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="d-none d-lg-block">
+        <button class="btn btn-consult inner" data-toggle="modal" data-target="#consultModal">
+          Consultație gratuită
+        </button>
+      </div>
+
+      <!-- LANG DESKTOP -->
+      <div class="d-none d-lg-block ml-3">
+        <div class="lang-toggle d-flex">
+          <a href="./" class="lang-switch active">RO</a>
+          <a href="../ru/" class="lang-switch">RU</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- MODAL: CONSULTATIE GRATUITA (оставляем как есть, только номер подравняла) -->
+<div class="modal fade consult-modal" id="consultModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <button type="button" class="close consult-close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="modal-body text-center py-5 px-4 px-md-5">
+
+        <h3 class="consult-title mb-4">Consultație gratuită</h3>
+
+       <form id="consultForm" class="consult-form mb-3">
+          <div class="form-group text-left">
+            <label for="consult-nume">Numele dvs</label>
+            <input type="text" class="form-control" id="consult-nume" name="name" required>
+          </div>
+
+          <div class="form-group text-left">
+            <label for="consult-telefon">Număr de telefon</label>
+            <input type="tel" class="form-control" id="consult-telefon" name="phone" required>
+          </div>
+
+          <button type="submit" class="btn btn-consult-submit btn-block mt-3">
+            Trimiteți cererea
+          </button>
+        </form>
+
+
+        <p class="consult-subtext mb-2">Formează numărul</p>
+        <a href="tel:+37362199439" class="consult-phone d-block mb-3">+373 621 994 39</a>
+
+        <div class="consult-social">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* =========================================================
+   RESET AGRESIV PENTRU LOGO (ANULEAZĂ TOT CE EXISTĂ)
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  /* =========================
+     BARA ALBASTRĂ – FIXĂ
+  ========================= */
+
+  .navbar.main-menu {
+    height: 100px !important;
+    min-height: 100px !important;
+    background: #1F6FA5 !important;
+    padding: 0 !important;
+  }
+
+  .navbar.main-menu > .container {
+    position: relative !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* =========================
+     LOGO – RESET TOTAL
+  ========================= */
+
+  a.top-logo {
+    position: absolute !important;
+    left: 80% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    line-height: 0 !important;
+    font-size: 0 !important;
+
+    z-index: 9999 !important;
+  }
+
+  /* =========================
+     IMAGINE LOGO – DIMENSIUNE REALĂ
+     (ANULEAZĂ height:165px)
+  ========================= */
+
+  a.top-logo img {
+    min-height: 0 !important;
+    height: 300px !important;
+    width: auto !important;
+    max-width: 200% !important;
+
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  /* =========================
+     BUTON HAMBURGER
+  ========================= */
+
+  .navbar-toggler {
+    position: relative !important;
+    z-index: 10000 !important;
+    border: 1px solid #ffffff !important;
+    padding: 6px 10px !important;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1) !important;
+  }
+
+  /* =========================
+     MENIU COLLAPSE – CADE SUB BARĂ
+     (NU MAI MIȘCĂ LOGO-UL)
+  ========================= */
+
+  .navbar-collapse {
+    position: absolute !important;
+    top: 70px !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    background: #1F6FA5 !important;
+    padding: 10px 15px !important;
+
+    z-index: 9000 !important;
+  }
+}
+
+/* =========================================================
+ TELEFOANE MICI
+========================================================= */
+
+@media (max-width: 576px) {
+
+.navbar.main-menu {
+  height: 100px !important;
+  min-height: 100px !important;
+}
+
+.navbar-collapse {
+  top: 64px !important;
+}
+
+a.top-logo img {
+  height: 300px !important;
+}
+}
+
+
+</style>
+

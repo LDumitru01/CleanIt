@@ -1,11 +1,11 @@
 RewriteEngine On
 
 # =====================================================
-# 0. FORCE redirect ro/index.html & ru/index.html -> ro/ / ru/
+# 0. FORCE redirect ro/index.php & ru/index.php -> ro/ / ru/
 # (PRIMA regulă, înainte de orice altceva)
 # =====================================================
-RewriteCond %{THE_REQUEST} \s/+cleanItV2/(ro|ru)/index\.html[\s?] [NC]
-RewriteRule ^(ro|ru)/index\.html$ /cleanItV2/$1/ [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+cleanItV2/(ro|ru)/index\.php[\s?] [NC]
+RewriteRule ^(ro|ru)/index\.php$ /cleanItV2/$1/ [R=301,L]
 
 # =====================================================
 # 1. Redirect root /cleanItV2/ -> /cleanItV2/ro/
@@ -18,19 +18,19 @@ RewriteRule ^$ ro/ [L,R=301]
 RewriteRule ^(ro|ru)/\1/(.*)$ /cleanItV2/$1/$2 [R=301,L]
 
 # =====================================================
-# 3. Elimină extensia .html din URL (extern)
-# ex: /ro/price.html -> /ro/price
+# 3. Elimină extensia .php din URL (extern)
+# ex: /ro/price.php -> /ro/price
 # =====================================================
-RewriteCond %{THE_REQUEST} \s/+cleanItV2/(.+?)\.html[\s?] [NC]
-RewriteRule ^(.+?)\.html$ /cleanItV2/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+cleanItV2/(.+?)\.php[\s?] [NC]
+RewriteRule ^(.+?)\.php$ /cleanItV2/$1 [R=301,L]
 
 # =====================================================
-# 4. Servește fișierele .html intern
-# ex: /ro/price -> /ro/price.html
+# 4. Servește fișierele .php intern
+# ex: /ro/price -> /ro/price.php
 # =====================================================
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.+)$ $1.html [L]
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)$ $1.php [L]
 
 # =====================================================
 # 5. Asigură slash final pentru directoare
@@ -38,3 +38,12 @@ RewriteRule ^(.+)$ $1.html [L]
 # =====================================================
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^(.+[^/])$ /cleanItV2/$1/ [L]
+
+RewriteEngine On
+
+# Dacă fișierul nu există ca folder
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Adaugă .php automat
+RewriteRule ^(.+)$ $1.php [L]

@@ -289,7 +289,9 @@
   font-weight: 800;
   font-size: 32px;
   line-height: 1.2;
-  color: #003c7d;
+   background: linear-gradient(90deg, #0b3168, #3fa9f5);
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .steps-intro {

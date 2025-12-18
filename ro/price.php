@@ -1,0 +1,493 @@
+<!doctype html> 
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Stilurile tale -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../styleprice.css">
+
+  <title>Prețuri servicii de curățenie în Chișinău | CleanIt</title>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJPRQZXNV">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EYJPRQZXNV');
+</script>
+</head>
+<body>
+
+  <!-- MENIU GLOBAL -->
+  <?php require_once __DIR__ . '/menu.php'; ?>
+<!-- MENIU GLOBAL -->
+
+
+  <main class="prices-page py-5">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb prices-breadcrumb">
+          <li class="breadcrumb-item"><a href="./">Acasă</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Prețuri servicii curățenie</li>
+        </ol>
+      </nav>
+
+      <!-- HERO: DESCRIERE GENERALĂ A PREȚURILOR -->
+      <section class="price-hero mb-5">
+        <div class="col-lg-7 px-0 pr-lg-4 mb-3 mb-lg-0">
+          <h1 class="price-hero-title">Prețuri servicii de curățenie profesională în Chișinău</h1>
+          <p class="price-hero-subtitle">
+             CleanIt oferă servicii complete de curățenie pentru locuințe și afaceri:
+            apartamente, case, birouri, spații comerciale și industriale.
+            Prețurile sunt transparente și adaptate fiecărui proiect.
+          </p>
+          <ul class="price-hero-list">
+            <li><i class="bi bi-check-circle-fill"></i>Evaluare gratuită telefonic sau la fața locului</li>
+            <li><i class="bi bi-check-circle-fill"></i>Echipă instruită + echipamente profesionale</li>
+            <li><i class="bi bi-check-circle-fill"></i>Detergenți siguri, eficienți și certificați</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-5 px-0 pl-lg-4">
+          <div class="price-block mb-0">
+            <strong>Important:</strong>
+            <p class="price-text-block mt-2">
+               Prețurile afișate sunt orientative.
+              Costul final este stabilit în funcție de suprafață, gradul de murdărie,
+              complexitatea lucrării și frecvența curățeniei.
+              Contactați-ne pentru o ofertă exactă.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PACHETE PRINCIPALE DE SERVICII -->
+      <section class="price-cards-section">
+        <h2 class="price-cards-title">Pachete principale de servicii de curățenie</h2>
+
+        <div class="row">
+
+          <!-- Curățenie generală -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="price-card">
+              <div>
+                <div class="price-card-icon">
+                  <i class="bi bi-house-door-fill"></i>
+                </div>
+                <div class="price-card-title">Curățenie generală</div>
+                <div class="price-card-desc">
+                   Curățenie profundă pentru apartamente și case – ideală înainte de mutare,
+                  după chiriași sau pentru igienizare completă.
+                </div>
+              </div>
+              <div>
+                <div class="price-card-value">de la 40 lei / m²</div>
+                <div class="price-card-unit">spații rezidențiale</div>
+                <span class="price-card-tag">Locuințe</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- După reparații -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="price-card">
+              <div>
+                <div class="price-card-icon">
+                  <i class="bi bi-tools"></i>
+                </div>
+                <div class="price-card-title">Curățenie după reparație</div>
+                <div class="price-card-desc">
+                  Eliminarea prafului de construcție, resturilor de materiale și urmelor de finisaj.
+                </div>
+              </div>
+              <div>
+                <div class="price-card-value">50–80 lei / m²</div>
+                <div class="price-card-unit">în funcție de gradul de murdărie</div>
+                <span class="price-card-tag">După reparație</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Întreținere / menaj -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="price-card">
+              <div>
+                <div class="price-card-icon">
+                  <i class="bi bi-calendar-week"></i>
+                </div>
+                <div class="price-card-title">Curățenie de întreținere</div>
+                <div class="price-card-desc">
+                   Menținerea constantă a curățeniei în apartamente și birouri prin abonamente flexibile.
+                </div>
+              </div>
+              <div>
+                <div class="price-card-value">25–40 lei / m²</div>
+                <div class="price-card-unit">în funcție de frecvență și volum</div>
+                <span class="price-card-tag">Abonamente</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spălare geamuri -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="price-card">
+              <div>
+                <div class="price-card-icon">
+                  <i class="bi bi-window"></i>
+                </div>
+                <div class="price-card-title">Spălare geamuri</div>
+                <div class="price-card-desc">
+                  Spălare profesională geamuri, vitrine și fațade din sticlă,
+                  interior și exterior.
+                </div>
+              </div>
+              <div>
+                <div class="price-card-value">20–55 lei / m²</div>
+                <div class="price-card-unit">interior &amp; exterior, vitrine, fațade</div>
+                <span class="price-card-tag">Geamuri</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobilier textil -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="price-card">
+              <div>
+                <div class="price-card-icon">
+                  <i class="bi bi-sofa"></i>
+                </div>
+                <div class="price-card-title">Curățare mobilier textil</div>
+                <div class="price-card-desc">
+                  Curățare chimică profesională pentru canapele, saltele, fotolii, scaune și covoare.
+                </div>
+              </div>
+              <div>
+                <div class="price-card-value">70–850 lei</div>
+                <div class="price-card-unit">per piesă / m² (în funcție de tip)</div>
+                <span class="price-card-tag">Textil</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobilier din piele -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="price-card">
+              <div>
+                <div class="price-card-icon">
+                  <i class="bi bi-droplet-half"></i>
+                </div>
+                <div class="price-card-title">Curățare mobilier din piele</div>
+                <div class="price-card-desc">
+                  Curățare delicată și îngrijire profesională pentru mobilier din piele naturală.
+                </div>
+              </div>
+              <div>
+                <div class="price-card-value">80–650 lei</div>
+                <div class="price-card-unit">per piesă</div>
+                <span class="price-card-tag">Piele</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CURĂȚENIE DE ÎNTREȚINERE / MENAJ -->
+      <section class="menaj-section">
+        <div class="container">
+          <h2 class="menaj-title">Curățenie de întreținere / menaj</h2>
+          <p class="menaj-subtitle">
+            Curățenie regulată pentru locuințe și birouri — zilnic, săptămânal sau lunar,
+            adaptată nevoilor dvs.
+          </p>
+
+          <div class="row">
+
+            <!-- ZILNIC -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="menaj-card">
+                <h3 class="menaj-card-title">Zilnic</h3>
+                <p class="menaj-card-desc">Mai mult de o dată pe săptămână</p>
+
+                <div class="menaj-item">
+                  <div>
+                    <strong>Apartament 1–2 camere</strong>
+                    <span>până la 3 ore · 1 cleaner</span>
+                  </div>
+                  <div class="menaj-price">de la 750 lei</div>
+                </div>
+
+                <div class="menaj-item">
+                  <div>
+                    <strong>Apartament 3+ camere</strong>
+                    <span>până la 4 ore · 1 cleaner</span>
+                  </div>
+                  <div class="menaj-price">de la 850 lei</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SAPTAMANAL -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="menaj-card">
+                <h3 class="menaj-card-title">Săptămânal</h3>
+                <p class="menaj-card-desc">O dată pe săptămână</p>
+
+                <div class="menaj-item">
+                  <div>
+                    <strong>Apartament 1–2 camere</strong>
+                    <span>până la 5 ore · 1 cleaner</span>
+                  </div>
+                  <div class="menaj-price">de la 800 lei</div>
+                </div>
+
+                <div class="menaj-item">
+                  <div>
+                    <strong>Apartament 3+ camere</strong>
+                    <span>până la 5 ore · 1 cleaner</span>
+                  </div>
+                  <div class="menaj-price">de la 1000 lei</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LUNAR -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="menaj-card">
+                <h3 class="menaj-card-title">Lunar</h3>
+                <p class="menaj-card-desc">Curățenie profundă periodică</p>
+
+                <div class="menaj-item">
+                  <div>
+                    <strong>Apartament 1–2 camere</strong>
+                    <span>până la 3 ore · 2 cleaneri</span>
+                  </div>
+                  <div class="menaj-price">de la 1200 lei</div>
+                </div>
+
+                <div class="menaj-item">
+                  <div>
+                    <strong>Apartament 3+ camere</strong>
+                    <span>până la 4 ore · 2 cleaneri</span>
+                  </div>
+                  <div class="menaj-price">de la 1750 lei</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="price-details container">
+
+        <h2 class="price-details-title">CURĂȚENIE</h2>
+        <div class="row">
+
+          <div class="col-md-4 mb-4">
+            <div class="price-card">
+              <div class="price-card-icon bg-blue"><i class="bi bi-brush"></i></div>
+              <h3 class="price-card-title">După reparație</h3>
+              <p class="price-card-desc">
+                Îndepărtarea prafului și a resturilor după lucrările de construcție. Lucrările sunt efectuate de 3+ cleaneri, până la 8 ore.
+              </p>
+              <div class="price-tag">50–80 lei/m²</div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="price-card">
+              <div class="price-card-icon bg-orange"><i class="bi bi-lightning-charge"></i></div>
+              <h3 class="price-card-title">Urgentă</h3>
+              <p class="price-card-desc">Programare rapidă în aceeași zi.</p>
+              <div class="price-tag">+20%</div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="price-card">
+              <div class="price-card-icon bg-green"><i class="bi bi-house-door"></i></div>
+              <h3 class="price-card-title">Generală</h3>
+              <p class="price-card-desc">
+                Curățenie profundă în spații rezidențiale. Lucrările sunt efectuate de 3+ cleaneri, până la 8 ore.
+              </p>
+              <div class="price-tag">50+ lei/m²</div>
+            </div>
+          </div>
+
+        </div>
+
+        <h2 class="price-details-title mt-5">CURĂȚAREA MOBILEI</h2>
+        <div class="row">
+
+          <div class="col-md-4 mb-4">
+            <div class="price-card">
+              <div class="price-card-icon bg-purple"><i class="bi bi-sofa"></i></div>
+              <h3 class="price-card-title">Canapea</h3>
+              <p class="price-card-desc">Curățare chimică profesională.</p>
+              <div class="price-tag">de la 450 lei/buc.</div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="price-card">
+              <div class="price-card-icon bg-purple"><i class="bi bi-sofa"></i></div>
+              <h3 class="price-card-title">Saltea</h3>
+              <p class="price-card-desc">Curățare chimică profesională.</p>
+              <div class="price-tag">de la 450 lei/buc.</div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="price-card">
+              <div class="price-card-icon bg-purple"><i class="bi bi-sofa"></i></div>
+              <h3 class="price-card-title">Spălare și călcare perdele/draperii</h3>
+              <p class="price-card-desc"></p>
+              <div class="price-tag">de la 25 lei/m²</div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="price-card">
+              <div class="price-card-icon bg-yellow"><i class="bi bi-person-seat"></i></div>
+              <h3 class="price-card-title">Fotoliu</h3>
+              <p class="price-card-desc">Îndepărtarea petelor și mirosurilor.</p>
+              <div class="price-tag">de la 350 lei/buc.</div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="price-card">
+              <div class="price-card-icon bg-yellow"><i class="bi bi-person-seat"></i></div>
+              <h3 class="price-card-title">Scaun</h3>
+              <p class="price-card-desc">Îndepărtarea petelor și mirosurilor.</p>
+              <div class="price-tag">de la 70 lei/buc.</div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="price-card">
+              <div class="price-card-icon bg-yellow"><i class="bi bi-g"></i></div>
+              <h3 class="price-card-title">Covoare</h3>
+              <p class="price-card-desc">Curățare prin metoda extracției.</p>
+              <div class="price-tag">de la 45 lei/m²</div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="steps-section py-5">
+        <div class="container">
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+              <p class="steps-kicker">Cu CLEANIT totul devine mai simplu</p>
+              <h2 class="steps-title">
+                Curățenia — ușor<br>în doar 3 pași
+              </h2>
+            </div>
+            <div class="col-lg-6">
+              <p class="steps-intro">
+                Procesul nostru este rapid și comod, astfel încât să vă puteți bucura de un spațiu curat
+                fără bătăi de cap. Ne ocupăm de toate detaliile — de la planificare
+                până la curățenie impecabilă.
+              </p>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <!-- Pas 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="step-card">
+                <div class="step-icon-wrap">
+                  <div class="step-circle">
+                    <i class="bi bi-search"></i>
+                  </div>
+                </div>
+                <h3 class="step-title">Alegeți serviciul potrivit</h3>
+                <div class="step-line"></div>
+                <p class="step-text">
+                  Consultați lista serviciilor noastre și alegeți ceea ce aveți nevoie:
+                  locuință, birou sau spațiu comercial.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pas 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="step-card step-card-main">
+                <div class="step-icon-wrap">
+                  <div class="step-circle">
+                    <i class="bi bi-calendar-check"></i>
+                  </div>
+                </div>
+                <h3 class="step-title">Stabiliți o vizită</h3>
+                <div class="step-line"></div>
+                <p class="step-text">
+                  Contactați-ne telefonic sau online — vom stabili împreună
+                  data și ora convenabile pentru curățenie.
+                </p>
+                <a href="#consultModal"
+                   data-toggle="modal"
+                   class="btn btn-step-cta">
+                  Sună-ne
+                </a>
+              </div>
+            </div>
+
+            <!-- Pas 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="step-card">
+                <div class="step-icon-wrap">
+                  <div class="step-circle">
+                    <i class="bi bi-stars"></i>
+                  </div>
+                </div>
+                <h3 class="step-title">Bucurați-vă de curățenie</h3>
+                <div class="step-line"></div>
+                <p class="step-text">
+                  Echipa CLEANIT se ocupă de toate. Dumneavoastră reveniți într-un spațiu curat,
+                  aerisit și plăcut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <?php include 'footer.php'; ?>
+  <div id="footer-container"></div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+          crossorigin="anonymous"></script>
+	<!-- Общий обработчик всех форм (страница + модалка) -->
+<script src="../leads.js"></script>
+
+</body>
+</html>

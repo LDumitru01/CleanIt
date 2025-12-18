@@ -1,0 +1,102 @@
+<!-- Alte servicii - CARUSEL -->
+
+<section class="other-services py-5">
+  <div class="container">
+    <h2 class="mb-4">ALTE SERVICII PROFESIONALE PENTRU COMPANII ȘI LOCUINȚE</h2>
+
+    <div id="otherServicesCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+
+            <div class="col-md-4">
+              <a href="apartament.php" class="service-card-link">
+                <div class="service-card">
+                  <img src="img/serviciu-apartament.jpg" class="img-fluid" alt="">
+                  <div class="service-card-title">
+                    Curățenie generală apartamente – intervenții complete
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="case.php" class="service-card-link">
+                <div class="service-card">
+                  <img src="img/serviciu-case.jpg" class="img-fluid" alt="">
+                  <div class="service-card-title">
+                    Curățenie case și vile – standard premium
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="bucatarie.php" class="service-card-link">
+                <div class="service-card">
+                  <img src="img/serviciu-bucatarie.jpg" class="img-fluid" alt="">
+                  <div class="service-card-title">
+                    Curățenie profesională bucătării
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+
+            <div class="col-md-4">
+              <a href="geamuri.php" class="service-card-link">
+                <div class="service-card">
+                  <img src="img/serviciu-geamuri.jpg" class="img-fluid" alt="">
+                  <div class="service-card-title">
+                    Spălare geamuri – rezultate impecabile
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="perdele.php" class="service-card-link">
+                <div class="service-card">
+                  <img src="img/serviciu-perdele.jpg" class="img-fluid" alt="">
+                  <div class="service-card-title">
+                    Spălare și călcare perdele – serviciu complet
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="tapiterie-auto.php" class="service-card-link">
+                <div class="service-card">
+                  <img src="#" class="img-fluid" alt="">
+                  <div class="service-card-title">
+                    Curățare chimică mobilier tapițat
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#otherServicesCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#otherServicesCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </div>
+</section>
