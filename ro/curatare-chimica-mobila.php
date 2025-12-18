@@ -94,7 +94,7 @@
 
         <!-- LEFT -->
         <div class="col-lg-7 mb-4 mb-lg-0">
-          <h2 class="service-section-title">Ce tipuri de mobilier curățăm?</h2>
+          <h2 class="service-section-title">Mobilierul moale și din piele inclus în serviciul nostru de curățare chimică</h2>
 
           <ul class="service-info-list">
             <li>Canapele (drepte, colțare, extensibile, modulare)</li>

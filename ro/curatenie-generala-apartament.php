@@ -35,8 +35,7 @@
 
 <?php require_once __DIR__ . '/menu.php'; ?>
 <!-- MENIU -->
-<?php require_once __DIR__ . '/menu.php'; ?>
-<!-- MENIU GLOBAL -->
+
 
 
 <main class="service-page">
@@ -55,7 +54,7 @@
           </h1>
 
           <p class="service-hero-subtitle">
-            Curățenie completă și profundă pentru apartamente –
+            Curățenie generală completă și profundă pentru apartamente –
             ideală înainte de mutare, după chiriași sau atunci când
             locuința are nevoie de o reîmprospătare totală.
           </p>
