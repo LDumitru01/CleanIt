@@ -61,7 +61,7 @@
           </p>
 
           <ul class="service-hero-list">
-            <li>Curățarea și dezinfectarea băii și bucătăriei</li>
+            <li>Curățarea generală și dezinfectarea băii și bucătăriei</li>
             <li>Ștergerea prafului de pe toate suprafețele și mobilierul</li>
             <li>Aspirarea și spălarea podelelor, inclusiv colțuri greu accesibile</li>
             <li>Curățarea ușilor, prizelor, plintelor și geamurilor la interior</li>

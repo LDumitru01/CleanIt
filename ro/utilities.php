@@ -14,8 +14,8 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
   <!-- Твои стили -->
-  <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles.css">
 
   <title>CLEANIT – Utilaj</title>
 </head>
@@ -32,7 +32,7 @@
       <!-- КРОШКИ -->
       <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb utilaj-breadcrumb">
-          <li class="breadcrumb-item"><a href="/">Acasă</a></li>
+          <li class="breadcrumb-item"><a href="./">Acasă</a></li>
           <li class="breadcrumb-item active" aria-current="page">Utilaj</li>
         </ol>
       </nav>
@@ -46,7 +46,7 @@
           <!-- 1 -->
           <div class="col-md-4 mb-4">
             <div class="utilaj-card">
-              <img src="img/utilaj/aparat-abur.jpg" alt="Aparat cu abur" class="utilaj-img">
+              <img src="../img/utilaj/aparat-abur.jpg" alt="Aparat cu abur" class="utilaj-img">
               <div class="utilaj-name">Aparat cu abur</div>
             </div>
           </div>
@@ -54,7 +54,7 @@
           <!-- 2 -->
           <div class="col-md-4 mb-4">
             <div class="utilaj-card">
-              <img src="img/utilaj/presiune-inalta.jpg" alt="Aparat cu presiune înaltă" class="utilaj-img">
+              <img src="../img/utilaj/presiune-inalta.jpg" alt="Aparat cu presiune înaltă" class="utilaj-img">
               <div class="utilaj-name">Aparat cu presiune înaltă</div>
             </div>
           </div>
@@ -62,7 +62,7 @@
           <!-- 3 -->
           <div class="col-md-4 mb-4">
             <div class="utilaj-card">
-              <img src="img/utilaj/aparat-presiune.jpg" alt="Aparat cu presiune" class="utilaj-img">
+              <img src="../img/utilaj/aparat-presiune.jpg" alt="Aparat cu presiune" class="utilaj-img">
               <div class="utilaj-name">Aparat cu presiune</div>
             </div>
           </div>
@@ -70,7 +70,7 @@
           <!-- 4 -->
           <div class="col-md-4 mb-4">
             <div class="utilaj-card">
-              <img src="img/utilaj/injectie-extractie.jpg" alt="Aspirator injecție-extracție" class="utilaj-img">
+              <img src="../img/utilaj/injectie-extractie.jpg" alt="Aspirator injecție-extracție" class="utilaj-img">
               <div class="utilaj-name">Aspirator injecție–extracție</div>
             </div>
           </div>
@@ -78,7 +78,7 @@
           <!-- 5 -->
           <div class="col-md-4 mb-4">
             <div class="utilaj-card">
-              <img src="img/utilaj/aspirator-uscat.jpg" alt="Aspirator uscat" class="utilaj-img">
+              <img src="../img/utilaj/aspirator-uscat.jpg" alt="Aspirator uscat" class="utilaj-img">
               <div class="utilaj-name">Aspirator uscat</div>
             </div>
           </div>
@@ -86,7 +86,7 @@
           <!-- 6 -->
           <div class="col-md-4 mb-4">
             <div class="utilaj-card">
-              <img src="img/utilaj/aspirator-umed-uscat.jpg" alt="Aspirator umed–uscat" class="utilaj-img">
+              <img src="../img/utilaj/aspirator-umed-uscat.jpg" alt="Aspirator umed–uscat" class="utilaj-img">
               <div class="utilaj-name">Aspirator umed–uscat</div>
             </div>
           </div>
@@ -94,7 +94,7 @@
           <!-- 7 -->
           <div class="col-md-4 mb-4">
             <div class="utilaj-card">
-              <img src="img/utilaj/monodisc.jpg" alt="Monodisc – curățare pavaje" class="utilaj-img">
+              <img src="../img/utilaj/monodisc.jpg" alt="Monodisc – curățare pavaje" class="utilaj-img">
               <div class="utilaj-name">Monodisc – curățare pavaje</div>
             </div>
           </div>
@@ -102,7 +102,7 @@
           <!-- 8 -->
           <div class="col-md-4 mb-4">
             <div class="utilaj-card">
-              <img src="img/utilaj/masina-spalat-pardoseli.jpg" alt="Mașină de spălat pardoseli" class="utilaj-img">
+              <img src="../img/utilaj/masina-spalat-pardoseli.jpg" alt="Mașină de spălat pardoseli" class="utilaj-img">
               <div class="utilaj-name">Mașină de spălat pardoseli</div>
             </div>
           </div>
@@ -110,7 +110,7 @@
           <!-- 9 -->
           <div class="col-md-4 mb-4">
             <div class="utilaj-card">
-              <img src="img/utilaj/perie-telescopica.jpg" alt="Perie telescopică" class="utilaj-img">
+              <img src="../img/utilaj/perie-telescopica.jpg" alt="Perie telescopică" class="utilaj-img">
               <div class="utilaj-name">Perie telescopică</div>
             </div>
           </div>
@@ -119,13 +119,6 @@
       </section>
   </div>
   </main>
-
-  <!-- подгружаем меню -->
-  <script>
-    fetch("menu.php")
-      .then(r => r.text())
-      .then(html => document.getElementById("menu-container").innerHTML = html);
-  </script>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

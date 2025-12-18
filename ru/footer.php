@@ -17,9 +17,9 @@
       <div class="col-md-3 mb-4">
         <h5 class="footer-title">ИНФОРМАЦИЯ</h5>
         <ul class="footer-links">
-          <li><a href="/">Главная</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="../utilities">Оборудование</a></li>
+          <li><a href="./">Главная</a></li>
+          <li><a href="#servicii">Услуги</a></li>
+          <li><a href="utilities">Оборудование</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </div>
@@ -38,7 +38,6 @@
       <div class="col-md-3 mb-4">
         <h5 class="footer-title">КОНТАКТЫ</h5>
 
-        <p><a href="tel:+37362199439" class="footer-tel">+373 621 994 39</a></p>
         <p><a href="tel:+37362199439" class="footer-tel">+373 621 994 39</a></p>
 
         <p><a href="mailto:tatiana.efimova09@gmail.com">tatiana.efimova09@gmail.com</a></p>

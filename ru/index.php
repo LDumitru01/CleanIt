@@ -191,6 +191,7 @@
             <div class="serviciu-img-wrap">
               <img src="../img/96464869.jpg.webp" class="serviciu-img" alt="Генеральная уборка квартиры">
             </div>
+            <a href="curatenie-generala-apartament" class="serviciu-card-link">
             <div class="serviciu-content">
               <h3 class="serviciu-title">Генеральная уборка квартиры</h3>
               <p class="serviciu-text">
@@ -198,6 +199,7 @@
               </p>
               <span class="serviciu-tag">ЖИЛЬЁ</span>
             </div>
+            </a>
           </div>
         </div>
 
@@ -209,7 +211,7 @@
                    class="serviciu-img"
                    alt="Уборка коммерческих и производственных помещений">
             </div>
-            <a href="curatenie-generala-apartament" class="serviciu-card-link"></a>
+            <a href="curatenie-spatii-comerciale-industriale" class="serviciu-card-link">
               <div class="serviciu-content">
                 <h3 class="serviciu-title">Коммерческие помещения</h3>
                 <p class="serviciu-text">
@@ -229,7 +231,7 @@
                    class="serviciu-img"
                    alt="Химчистка мягкой мебели">
             </div>
-            <a href="curatare-chimica-mobila" class="serviciu-card-link"></a>
+            <a href="curatare-chimica-mobila" class="serviciu-card-link">
               <div class="serviciu-content">
                 <h3 class="serviciu-title">Химчистка мягкой мебели</h3>
                 <p class="serviciu-text">

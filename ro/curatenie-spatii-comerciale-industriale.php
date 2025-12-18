@@ -102,7 +102,7 @@
         <!-- TEXT -->
         <div class="col-lg-7 mb-4 mb-lg-0">
           <h2 class="service-section-title">
-            Curățenie adaptată fiecărui tip de activitate
+            Servicii de curățenie adaptate activităților comerciale și industriale
           </h2>
 
           <p>
