@@ -19,9 +19,9 @@ $botToken = '7983945444:AAFr0DmZwpEx0h1uWcB8ReaGrZk9gprllMQ';
 $chatId   = '-5082356822';
 
 /* MESAJ */
-$message = "📩 *Cerere consultare nouă*\n\n"
-         . "👤 Nume: *{$name}*\n"
-         . "📞 Telefon: *{$phone}*\n";
+$message  = "*Cerere consultare noua*\n\n";
+$message .= "Nume: {$name}\n";
+$message .= "Telefon: {$phone}\n";
 
 /* TRIMITERE */
 $url = "https://api.telegram.org/bot{$botToken}/sendMessage";

@@ -62,7 +62,7 @@
     const formData = new FormData(form);
     formData.append("page", window.location.href);
 
-    fetch("send-telegram.php", {
+    fetch("send-telegram", {
       method: "POST",
       body: formData,
     })
