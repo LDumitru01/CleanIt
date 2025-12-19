@@ -1,231 +1,96 @@
-<!doctype html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+(function () {
+  "use strict";
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        crossorigin="anonymous" />
+  function closeMegamenus() {
+    document.querySelectorAll(".megamenu.show").forEach(menu => {
+      menu.classList.remove("show");
 
-  <!-- Icons -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+      const dropdown = menu.querySelector(".dropdown-menu");
+      if (dropdown) dropdown.classList.remove("show");
 
-  <!-- Stiluri globale -->
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../styleprice.css" />
+      const toggle = menu.querySelector(".dropdown-toggle");
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    });
+  }
 
-  <title>Curățenie înainte & după eveniment – CleanIt</title>
-  <meta name="description"
-        content="Servicii rapide de curățenie înainte și după evenimente în Chișinău: petreceri, conferințe, nunți, aniversări, corporate. Disponibil 24/7, intervenție urgentă.">
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJPRQZXNV">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  // ===== MEGAMENU CLICK =====
+  document.addEventListener("click", function (e) {
 
-  gtag('config', 'G-EYJPRQZXNV');
-</script>
-</head>
-<body>
+    const toggle = e.target.closest(".megamenu .dropdown-toggle");
+    const insideMenu = e.target.closest(".megamenu");
+    const isModalTrigger = e.target.closest('[data-toggle="modal"]');
 
-<!-- MENIU -->
-<?php require_once __DIR__ . '/menu.php'; ?>
-<!-- MENIU GLOBAL -->
+    // 👉 click pe buton de modal → NU blocăm
+    if (isModalTrigger) {
+      closeMegamenus();
+      return;
+    }
 
+    // 👉 CLICK PE TOGGLE
+    if (toggle) {
+      e.preventDefault();
+      e.stopPropagation();
 
-<main class="service-page">
+      const parent = toggle.closest(".megamenu");
+      const dropdown = parent.querySelector(".dropdown-menu");
+      const isOpen = parent.classList.contains("show");
 
-  <!-- HERO -->
-  <section class="service-hero py-5">
-    <div class="container">
-      <div class="row align-items-center">
+      document.querySelectorAll(".megamenu.show").forEach(menu => {
+        if (menu !== parent) {
+          menu.classList.remove("show");
+          const d = menu.querySelector(".dropdown-menu");
+          if (d) d.classList.remove("show");
+          const t = menu.querySelector(".dropdown-toggle");
+          if (t) t.setAttribute("aria-expanded", "false");
+        }
+      });
 
-        <!-- TEXT -->
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <span class="service-badge">Persoane juridice & fizice</span>
-          <h1 class="service-hero-title">
-            Curățenie înainte & după eveniment
-          </h1>
-          <p class="service-hero-subtitle">
-            Organizarea unui eveniment este plină de emoții — curățenia nu ar trebui să fie una dintre griji.
-            Noi pregătim spațiul pentru oaspeți și îl readucem la starea perfectă după final.
-          </p>
+      if (!isOpen) {
+        parent.classList.add("show");
+        dropdown.classList.add("show");
+        toggle.setAttribute("aria-expanded", "true");
+      }
 
-          <ul class="service-hero-list">
-            <li>Disponibil 24/7 inclusiv weekend & sărbători</li>
-            <li>Intervenție rapidă înainte & după petreceri</li>
-            <li>Potrivit pentru locuințe, oficii, săli, terase, restaurante</li>
-            <li>Produse profesionale, fără alergeni</li>
-          </ul>
+      return;
+    }
+    
+    // Opțional: Dacă dai click în afara meniului, să se închidă tot
+    if (!insideMenu) {
+        closeMegamenus();
+    }
 
-          <div class="mt-4 d-flex flex-wrap align-items-center">
-            <button
-              type="button"
-              class="btn service-cta-btn mr-3 mb-3"
-              data-toggle="modal"
-              data-target="#consultModal">
-              Programați curățenia
-            </button>
-            <div class="service-price-short mb-3">
-              <span>în funcție de suprafață & volum</span>
-            </div>
-          </div>
-        </div>
+  }); // <--- AICI LIPSEA ÎNCHIDEREA FUNCȚIEI DE CLICK!
 
-        <!-- IMAGINE -->
-        <div class="col-lg-5 offset-lg-1">
-          <div class="service-hero-image-wrap">
-            <img src="img/3f6c3b29e56396b5d59d8b45dc266f62.jpg"
-            
-                 alt="Curățenie după petrecere"
-                 class="img-fluid service-hero-image" />
-          </div>
-        </div>
+  // ===== FORM SUBMIT =====
+  document.addEventListener("submit", function (e) {
+    const form = e.target;
+    if (!form.classList.contains("js-lead-form")) return;
 
-      </div>
-    </div>
-  </section>
+    e.preventDefault();
 
-  <!-- DETALII -->
-  <section class="service-details py-5">
-    <div class="container">
-      <div class="row">
+    const formData = new FormData(form);
+    formData.append("page", window.location.href);
 
-        <div class="col-lg-7 mb-4 mb-lg-0">
-          <h2 class="service-section-title">Curățenie rapidă și eficientă</h2>
-          <p>
-            Curățăm spațiul înainte de eveniment pentru a crea impresia perfectă —
-            apoi intervenim după, pentru a reda ordinea, prospețimea și igiena.
-          </p>
-          <p>
-            Ideal pentru petreceri acasă, evenimente corporate, aniversări, botezuri,
-            traininguri, conferințe, recepții, nunți sau evenimente în aer liber.
-          </p>
-          <p>
-            Putem ajunge în aceeași zi, în funcție de disponibilitate.
-          </p>
-        </div>
+    fetch("send-telegram", {
+      method: "POST",
+      body: formData,
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          alert("Cererea a fost trimisă cu succes ✅");
+          form.reset();
 
-        <!-- CARD -->
-        <div class="col-lg-5">
-          <div class="service-info-card">
-            <h3 class="service-info-title">Serviciul include:</h3>
-            <ul class="service-info-list">
-              <li>Strângerea gunoiului & sortarea deșeurilor</li>
-              <li>Spălarea podelelor & suprafețelor</li>
-              <li>Curățarea meselor, scaunelor & mobilierului</li>
-              <li>Igienizarea bucătăriei & grupurilor sanitare</li>
-              <li>Aerisire & eliminarea mirosurilor</li>
-              <li>Spălarea paharelor, farfuriilor & accesoriilor</li>
-            </ul>
+          if (window.$ && $("#consultModal").modal) {
+            $("#consultModal").modal("hide");
+          }
+        } else {
+          alert("Eroare la trimitere");
+        }
+      })
+      .catch(() => {
+        alert("Eroare de conexiune");
+      });
+  });
 
-            <div class="service-info-price">
-              Preț orientativ: <strong>600–3500 lei</strong><br />
-              <span>Evaluare gratuită în funcție de spațiu și volum.</span>
-            </div>
-
-            <button
-              type="button"
-              class="btn btn-block service-cta-btn mt-3"
-              data-toggle="modal"
-              data-target="#consultModal">
-              Solicitați ofertă personalizată
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- BENEFICII -->
-  <section class="service-why py-5">
-    <div class="container">
-      <h2 class="service-section-title text-center mb-4">
-        De ce să alegeți CleanIt?
-      </h2>
-
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="service-why-card">
-            <h3>Echipă specializată</h3>
-            <p>
-              Curățăm eficient după orice tip de eveniment, fără stres.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="service-why-card">
-            <h3>Intervenție rapidă</h3>
-            <p>
-              Ajungem în câteva ore, chiar și noaptea sau în weekend.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="service-why-card">
-            <h3>Fără taxe ascunse</h3>
-            <p>
-              Preț transparent, stabilit înainte de intervenție.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section class="service-cta-banner py-4">
-    <div class="container">
-      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
-        <div class="mb-3 mb-lg-0">
-          <h2 class="service-cta-banner-title mb-1">
-            Ați avut un eveniment recent?
-          </h2>
-          <p class="mb-0 service-cta-banner-text">
-            Suntem pregătiți să curățăm imediat – sunați acum!
-          </p>
-        </div>
-
-        <a href="tel:+37362199439" class="btn service-cta-btn">
-          +373 621 994 39
-        </a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- FOOTER -->
-<div id="footer-container"><?php
-include 'footer.php';
-?></div>
-
-<!-- Load menu & footer -->
-<script>
-  fetch("menu.php")
-    .then(r => r.text())
-    .then(html => (document.getElementById("menu-container").innerHTML = html));
-
-  fetch("footer.php")
-    .then(r => r.text())
-    .then(html => (document.getElementById("footer-container").innerHTML = html));
-</script>
-
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-	<!-- Общий обработчик всех форм (страница + модалка) -->
-<script src="../leads.js"></script>
-
-</body>
-</html>
+})();

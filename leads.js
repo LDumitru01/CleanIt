@@ -20,22 +20,30 @@
     const insideMenu = e.target.closest(".megamenu");
     const isModalTrigger = e.target.closest('[data-toggle="modal"]');
 
-    // 👉 click pe buton de modal → NU blocăm
+    // Dacă dai click pe buton de modal să NU blocăm
     if (isModalTrigger) {
       closeMegamenus();
       return;
     }
 
-    // 👉 CLICK PE TOGGLE (AICI ERA BUGUL)
+    // Dacă dai CLICK PE TOGGLE (AICI ERA BUGUL)
     if (toggle) {
       e.preventDefault();
-      e.stopPropagation(); // 🔥 CHEIA – oprește închiderea imediată
+      e.stopPropagation();
 
       const parent = toggle.closest(".megamenu");
       const dropdown = parent.querySelector(".dropdown-menu");
       const isOpen = parent.classList.contains("show");
 
-      closeMegamenus();
+      document.querySelectorAll(".megamenu.show").forEach(menu => {
+        if (menu !== parent) {
+          menu.classList.remove("show");
+          const d = menu.querySelector(".dropdown-menu");
+          if (d) d.classList.remove("show");
+          const t = menu.querySelector(".dropdown-toggle");
+          if (t) t.setAttribute("aria-expanded", "false");
+        }
+      });
 
       if (!isOpen) {
         parent.classList.add("show");
@@ -46,11 +54,12 @@
       return;
     }
 
-    // 👉 click în afara meniului
+    // Opțional: Dacă dai click în afara meniului, să se închidă tot
     if (!insideMenu) {
-      closeMegamenus();
+        closeMegamenus();
     }
-  });
+
+  }); // <--- AICI LIPSEA ÎNCHIDEREA FUNCȚIEI DE CLICK!
 
   // ===== FORM SUBMIT =====
   document.addEventListener("submit", function (e) {
@@ -69,7 +78,7 @@
       .then(res => res.json())
       .then(data => {
         if (data.success) {
-          alert("Cererea a fost trimisă cu succes ✅");
+          alert("Cererea a fost trimisă cu succes.");
           form.reset();
 
           if (window.$ && $("#consultModal").modal) {
